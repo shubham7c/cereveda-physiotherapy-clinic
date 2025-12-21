@@ -7,7 +7,9 @@ import DoctorsSection from "../components/DoctorsSection";
 import ClinicSection from "../components/ClinicSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import NeuroCareScope from "../components/NeuroCareScope";
-import FaqSection from "../components/CerevedaFAQ";
+import FaqSection from "../components/CereVedaFAQ";
+
+
 
 function Home() {
   return <div>
