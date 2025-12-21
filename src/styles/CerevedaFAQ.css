@@ -1,0 +1,126 @@
+.cereveda-faq {
+  padding: 100px 20px;
+  background: #f3f8f7;
+}
+
+.faq-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  color: #0b2f3a;
+}
+
+.faq-subtitle {
+  text-align: center;
+  color: #5b7c85;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 26px;
+  box-shadow: 0 10px 30px rgba(11, 47, 58, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 14px 36px rgba(11, 47, 58, 0.12);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b2f3a;
+}
+
+.faq-icon {
+  font-size: 26px;
+  color: #1f6f78;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 1000px; /* 🔥 critical fix */
+  margin-top: 14px;
+}
+
+.faq-answer p {
+  font-size: 15px;
+  color: #4e6f78;
+  line-height: 1.7;
+}
+/* ================================================= */
+/* 📱 MOBILE COMPACT — FAQ SECTION */
+/* ================================================= */
+@media (max-width: 768px) {
+
+  .cereveda-faq {
+    padding: 65px 16px;        /* 🔽 from 100px */
+  }
+
+  .faq-title {
+    font-size: 26px;           /* vw hataya */
+  }
+
+  .faq-subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 32px;       /* 🔽 from 50 */
+  }
+
+  .faq-list {
+    gap: 14px;                 /* 🔽 from 18 */
+  }
+
+  .faq-item {
+    padding: 18px 20px;        /* 🔽 tighter card */
+    border-radius: 14px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .faq-icon {
+    font-size: 22px;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* 🔥 Mobile jugad: answer spacing control */
+  .faq-item.open .faq-answer {
+    margin-top: 10px;
+  }
+}

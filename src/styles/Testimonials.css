@@ -1,0 +1,178 @@
+/* ===============================
+   SECTION
+=============================== */
+.testimonials-section {
+  background: #0B2F3A;
+  padding: 80px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* ===============================
+   TITLES
+=============================== */
+.mini-title {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #c6d0cf;
+  margin-bottom: 6px;
+}
+
+.main-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+/* ===============================
+   MARQUEE (CRITICAL FIX)
+=============================== */
+.marquee {
+  margin-bottom: 22px;
+  overflow: visible;
+  min-height: 220px;           /* 🔥 MOBILE BLANK FIX */
+}
+
+.marquee-track {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  white-space: wrap;         /* 🔥 REQUIRED */
+  animation: marquee-left 85s linear infinite;
+}
+
+.marquee.reverse .marquee-track {
+  animation: marquee-right 65s linear infinite;
+}
+
+/* ===============================
+   CARD
+=============================== */
+.testimonial-card {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 14px 30px rgba(4, 39, 50, 0.863);
+  text-align: left;
+
+  display: flex;               /* 🔥 FIX NAME ISSUE */
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.testimonial-card:hover {
+
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+
+/* ===============================
+   STARS
+=============================== */
+.stars {
+  color: #f5b400;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   REVIEW
+=============================== */
+.review {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #3f5f66;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   NAME (NOW ALWAYS VISIBLE)
+=============================== */
+.testimonial-card .name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b2f3a;
+  margin-top: 10px;            /* 🔥 PUSH TO BOTTOM */
+ 
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* =========================================
+   📱 MOBILE FORCE FIX (LIKE NAME FIX)
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* SECTION */
+  .testimonials-section {
+    padding: 56px 0 !important;
+  }
+
+  /* TITLE */
+  .main-title {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 32px !important;
+  }
+
+  /* 🔥 MARQUEE FIX */
+  .marquee {
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+    min-height: auto !important;
+  }
+
+  /* 🔥 THIS IS THE REAL FIX */
+  .marquee .marquee-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;     /* 🔑 SAME AS NAME FIX */
+    width: max-content !important;
+    gap: 14px !important;
+
+    animation-duration: 26s !important;
+  }
+
+  /* 🔥 CARD FIX */
+  .testimonial-card {
+    width: 260px !important;
+    padding: 18px !important;
+    border-radius: 16px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* TEXT */
+  .review {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* 🔥 NAME – SAME STRATEGY AS BEFORE */
+  .testimonial-card .name {
+    display: inline-block !important;
+    font-size: 12.5px !important;
+    line-height: 1.2 !important;
+    color: #0b2f3a !important;
+    white-space: nowrap !important;
+  }
+}

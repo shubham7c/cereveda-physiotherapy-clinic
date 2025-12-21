@@ -1,0 +1,175 @@
+.ncs-section {
+  padding: 110px 6%;
+  background: #f4faf9;
+}
+
+/* HEADER */
+.ncs-header {
+  max-width: 920px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.ncs-header h2 {
+  font-size: 3vw;
+  font-weight: 900;
+  color: #0b2f3a;
+}
+
+.ncs-header p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #5f7c83;
+}
+
+/* GRID */
+.ncs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 42px;
+}
+
+/* CARD */
+.ncs-card {
+  background: #0b2f3a;
+  border-radius: 26px;
+  padding: 34px;
+  color: #ffffff;
+  box-shadow: 0 24px 60px rgba(11, 47, 58, 0.18);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.ncs-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ncs-card h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.ncs-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ncs-card li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #e6f1f0;
+}
+
+/* FOCUS AREA */
+.ncs-focus {
+  margin-top: 110px;
+  padding: 90px 6%;
+  background: linear-gradient(135deg, #0b2f3a, #124c4b);
+  border-radius: 44px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ncs-focus h2 {
+  font-size: 2.6vw;
+  margin-bottom: 42px;
+}
+
+/* CHIPS */
+.ncs-focus-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.ncs-chip {
+  background: rgba(255, 255, 255, 0.14);
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.ncs-chip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ================================================= */
+/* 📱 MOBILE COMPACT — Neuro Care Scope */
+/* ================================================= */
+@media (max-width: 768px) {
+
+  /* SECTION */
+  .ncs-section {
+    padding: 70px 5%;
+  }
+
+  /* HEADER */
+  .ncs-header {
+    margin-bottom: 45px;
+  }
+
+  .ncs-header h2 {
+    font-size: 26px;      /* vw hataya */
+  }
+
+  .ncs-header p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  /* GRID */
+  .ncs-grid {
+    gap: 24px;           /* 42 → 24 */
+  }
+
+  /* CARD */
+  .ncs-card {
+    padding: 22px;       /* 34 → 22 */
+    border-radius: 20px;
+  }
+
+  .ncs-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .ncs-card li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  /* ================= FOCUS AREA (BIG SAVIOUR) ================= */
+
+  .ncs-focus {
+    margin-top: 70px;    /* 110 → 70 */
+    padding: 50px 5%;    /* 90 → 50 */
+    border-radius: 28px;
+  }
+
+  .ncs-focus h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  /* CHIPS */
+  .ncs-focus-grid {
+    gap: 12px;
+  }
+
+  .ncs-chip {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  /* 🔥 JUGAD: mobile pe extra chips hide */
+  .ncs-chip:nth-child(n+7) {
+    display: none;
+  }
+}

@@ -1,0 +1,229 @@
+/* =====================================================
+   BASE
+===================================================== */
+.contact-page {
+  background: #f5faf9;
+  padding-bottom: 100px;
+}
+
+/* HERO */
+.contact-hero {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0b2f3a;
+}
+
+.contact-hero p {
+  margin-top: 10px;
+  color: #5c7a84;
+}
+
+/* FORM */
+.contact-form {
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 45px;
+  border-radius: 26px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* FIELD */
+.field {
+  position: relative;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.field textarea {
+  resize: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #2b9875;
+  box-shadow: 0 0 0 2px rgba(43,152,117,0.15);
+}
+
+/* FLOAT LABEL */
+.field label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s;
+  background: white;
+  padding: 0 6px;
+}
+
+.field input:focus + label,
+.field textarea:focus + label,
+.field label.active {
+  top: -6px;
+  font-size: 12px;
+  color: #2b9875;
+}
+
+/* ICON */
+.icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+/* CHECKBOX */
+.checkbox {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn-animated {
+  height: 64px;
+  border: none;
+  border-radius: 40px;
+  background: #0b2f3a;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.submit-btn-animated .check-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #2b9875;
+  position: absolute;
+  top: 0;
+  right: -64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+
+.submit-btn-animated.active .check-box {
+  right: 0;
+}
+
+.submit-btn-animated svg path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  transition: stroke-dashoffset 0.6s ease 0.6s;
+}
+
+.submit-btn-animated.active svg path {
+  stroke-dashoffset: 0;
+}
+
+/* POPUP */
+.success-popup {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #1f2937;
+  color: white;
+  padding: 16px 18px;
+  border-radius: 14px;
+  width: 300px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.popup-title {
+  font-weight: 600;
+}
+
+.popup-desc {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.loader-line {
+  height: 3px;
+  background: linear-gradient(90deg, #2b9875, transparent);
+  margin-top: 10px;
+  animation: load 4s linear forwards;
+}
+
+@keyframes load {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* ===============================
+   RESPONSIVE – MOBILE & TABLET
+================================ */
+@media (max-width: 1024px) {
+  .contact-hero h1 { font-size: 40px; }
+  .contact-form { padding: 36px; }
+}
+
+@media (max-width: 768px) {
+  .contact-hero { padding: 70px 16px; }
+  .contact-hero h1 { font-size: 32px; }
+  .contact-form { margin: 0 16px; padding: 28px 22px; }
+}
+
+@media (max-width: 480px) {
+  .contact-hero h1 { font-size: 28px; }
+  .contact-form { padding: 24px 18px; }
+}
+
+/* =====================================================
+   🔒 SAFE ADDITION – PAGE OPEN ANIMATION ONLY
+===================================================== */
+/* SAFE PAGE ENTRY ANIMATION */
+.contact-hero,
+.contact-form {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contactFadeIn 0.9s ease-out forwards;
+}
+
+.contact-form {
+  animation-delay: 0.15s;
+}
+
+@keyframes contactFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

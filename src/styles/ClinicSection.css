@@ -1,0 +1,217 @@
+/* ================= SECTION ================= */
+.clinic-section {
+  padding: 110px 6%;
+  background: #eef4f3;
+  text-align: center;
+}
+
+/* ================= HEADING ================= */
+.clinic-title {
+  font-size: 4vw;
+  font-weight: 800;
+  color: #0b2f3a;
+}
+
+.clinic-subtitle {
+  max-width: 720px;
+  margin: 12px auto 70px;
+  color: #5e7b83;
+}
+
+/* ================= LAYOUT ================= */
+.clinic-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ================= IMAGE ================= */
+.clinic-image img {
+  width: 100%;
+  border-radius: 26px;
+  object-fit: cover;
+  will-change: opacity; /* GPU hint */
+}
+
+/* ================= DOTS ================= */
+.clinic-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 20px;
+  height: 4px;
+  background: #cfdada;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dot::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #0b2f3a;
+}
+
+.dot.active::after {
+  animation: fillDot 4s linear forwards;
+}
+
+@keyframes fillDot {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* ================= INFO ================= */
+.clinic-info {
+  background: #0b2f3a;
+  color: white;
+  padding: 46px;
+  border-radius: 30px;
+  text-align: left;
+}
+
+/* ================= TEXT ANIMATION ================= */
+.clinic-info > * {
+  opacity: 0;
+  transform: translateX(-40px);
+  will-change: transform, opacity;
+}
+
+.clinic-info h3 {
+  font-size: 2vw;
+  margin-bottom: 12px;
+  font-weight: 900;
+}
+
+.text-show h3,
+.text-show .rating,
+.text-show .clinic-type,
+.text-show .clinic-address,
+.text-show .clinic-time,
+.text-show .clinic-actions {
+  animation: slideIn 0.6s forwards;
+}
+
+.text-show .rating { animation-delay: 0.1s; }
+.text-show .clinic-type { animation-delay: 0.2s; }
+.text-show .clinic-address { animation-delay: 0.3s; }
+.text-show .clinic-time { animation-delay: 0.4s; }
+.text-show .clinic-actions { animation-delay: 0.5s; }
+
+@keyframes slideIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ================= TEXT ================= */
+.clinic-type {
+  font-weight: 600;
+}
+
+.clinic-address,
+.clinic-time {
+  margin-top: 15px;
+}
+
+/* ================= STARS ================= */
+.star {
+  cursor: pointer;
+  color: #f1c40f;
+  font-size: 20px;
+  margin-right: 4px;
+  transition: 0.25s ease;
+}
+
+.star:hover {
+  text-shadow: 0 0 10px gold;
+  transform: scale(1.2);
+}
+
+/* ================= BUTTONS ================= */
+.clinic-actions {
+  margin-top: 26px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: white;
+  color: #0b2f3a;
+  padding: 12px 26px;
+  border-radius: 26px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 26px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #0b2f3a;
+  transform: translateY(-3px);
+}
+
+/* ================================================= */
+/* 📱 MOBILE & TABLET — RESPONSIVE ONLY */
+/* ================================================= */
+@media (max-width: 900px) {
+
+  .clinic-section {
+    padding: 80px 6% 90px;
+  }
+
+  .clinic-title {
+    font-size: 28px;   /* vw hataya */
+  }
+
+  .clinic-subtitle {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  .clinic-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .clinic-info {
+    padding: 34px;
+    text-align: center;
+  }
+
+  .clinic-info h3 {
+    font-size: 22px;
+  }
+
+  /* 🔥 mobile pe heavy slide animation simplify */
+  .clinic-info > * {
+    transform: translateY(20px);
+  }
+
+  @keyframes slideIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .clinic-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

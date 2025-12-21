@@ -1,0 +1,268 @@
+.book-appointment {
+  padding: 80px 20px;
+  background: #f5faf9;
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0b2f3a;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  color: #5c7a84;
+}
+
+.appointment-form {
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* FIELD + FLOATING LABEL */
+.field {
+  position: relative;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #2b9875;
+  box-shadow: 0 0 0 2px rgba(43,152,117,0.15);
+}
+
+/* FLOAT LABEL */
+.field label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  padding: 0 6px;
+}
+
+.field input:focus + label,
+.field select:focus + label,
+.field label.active {
+  top: -6px;
+  font-size: 12px;
+  color: #2b9875;
+}
+
+/* ICON */
+.icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+/* DATE FIX */
+.date-field label {
+  top: -6px !important;
+  font-size: 12px;
+  color: #2b9875;
+}
+
+.date-field input[type="date"] {
+  caret-color: transparent;
+}
+/* TIME INPUT – NO TYPING, ONLY SCROLL */
+.field input[type="time"] {
+  caret-color: transparent;
+  cursor: pointer;
+}
+
+/* CHECKBOX */
+.checkbox {
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+
+/* SUCCESS POPUP */
+.success-popup {
+  position: fixed;
+  top: 30px;
+  right: 64px;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #232531;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 14px;
+  width: 280px;
+}
+
+.popup-title {
+  font-weight: 600;
+}
+
+.popup-desc {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.loader-line {
+  height: 3px;
+  background: linear-gradient(90deg, #2b9875, transparent);
+  margin-top: 10px;
+  animation: load 6s linear forwards;
+}
+
+@keyframes load {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+/* Mobile keyboard block */
+.field input[type="time"]::-webkit-datetime-edit {
+  pointer-events: none;
+}
+/* ===============================
+   SUBMIT BUTTON – ANIMATED
+================================ */
+
+.submit-btn-animated {
+  width: 100%;
+  height: 64px;
+  border: none;
+  outline: none;
+  background: #0b2f3a; /* theme */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.35);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+/* text */
+.submit-btn-animated .btn-text {
+  position: relative;
+  z-index: 2;
+  transition: margin-right 0.6s ease;
+}
+
+/* check container */
+.submit-btn-animated .check-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #2b9875;
+  position: absolute;
+  top: 0;
+  right: -64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* svg */
+.submit-btn-animated svg {
+  width: 32px;
+}
+
+.submit-btn-animated svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease 0.6s;
+}
+
+/* ACTIVE STATE */
+.submit-btn-animated.active {
+  background: #2b9875;
+}
+
+.submit-btn-animated.active .check-box {
+  right: 0;
+  opacity: 1;
+}
+
+.submit-btn-animated.active .btn-text {
+  margin-right: 72px;
+}
+
+.submit-btn-animated.active svg path {
+  stroke-dashoffset: 0;
+}
+/* ===============================
+   SUBMIT BUTTON – DISABLED STATE
+   (JS isSubmitting support)
+================================ */
+
+.submit-btn-animated:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* text thoda calm ho jaye while submitting */
+.submit-btn-animated:disabled .btn-text {
+  margin-right: 0 !important;
+}
+
+/* check animation tabhi chale jab active ho */
+.submit-btn-animated:disabled .check-box {
+  opacity: 0;
+}
+/* =====================================================
+   🔒 SAFE ADDITION – PAGE OPEN ANIMATION ONLY
+   (Contact page jaisa)
+===================================================== */
+
+.book-appointment,
+.book-appointment .appointment-form {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: bookFadeIn 0.9s ease-out forwards;
+}
+
+/* form thoda late aaye */
+.book-appointment .appointment-form {
+  animation-delay: 0.15s;
+}
+
+@keyframes bookFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

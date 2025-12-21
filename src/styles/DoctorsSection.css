@@ -1,0 +1,229 @@
+.doctors-section {
+  position: relative;
+  padding: 85px 6%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* ================= BG ICONS ================= */
+.bg-icon {
+  position: absolute;
+  font-size: 140px;
+  opacity: 0.2;
+  pointer-events: none;
+  will-change: transform; /* GPU hint */
+}
+
+.stethoscope {
+  top: 5%;
+  left: 71%;
+  rotate: 15deg;
+}
+
+.brain {
+  bottom: 80%;
+  left: 13%;
+}
+
+/* ================= HEADER ================= */
+.doctors-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 70px;
+}
+
+.doctors-header h2 {
+  font-size: 3vw;
+  font-weight: bolder;
+  color: #0e3b3b;
+}
+
+.doctors-header p {
+  color: #5f7f7a;
+  margin-top: 10px;
+}
+
+/* ================= GRID ================= */
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* ================= CARD ================= */
+.doctor-card {
+  background: #0B2F3A;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(40px);
+  opacity: 0;
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    box-shadow 0.5s ease;
+
+  will-change: transform, opacity; /* 👈 huge lag fix */
+}
+
+.doctor-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px); /* slightly reduced */
+}
+
+/* ================= IMAGE ================= */
+.doctor-image {
+  height: 28vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.doctor-card:hover img {
+  transform: scale(1.04); /* reduced scale = smoother */
+}
+
+/* ================= CONTENT ================= */
+.doctor-content {
+  padding: 28px;
+}
+
+.doctor-content h3 {
+  font-weight: 900;
+  color: #eaecec;
+  font-size: 2.5vw;
+}
+
+.degree {
+  display: block;
+  font-weight: 600;
+  color: #9a9d9c;
+  font-size: 1.2vw;
+  margin: 4px 0;
+}
+
+.role {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.exp {
+  font-size: 16px;
+  color: #ffffffa1;
+  margin-bottom: 15px;
+}
+
+.doctor-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.doctor-content li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* ================= BUTTON ================= */
+.know-more {
+  margin-top: 16px;
+  background: #ffffff;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.know-more:hover {
+  background: #146b63;
+}
+
+/* ================= GLOW (OPTIMIZED) ================= */
+.doctor-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: radial-gradient(
+    circle at top left,
+    rgba(32, 201, 181, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.doctor-card.show::before {
+  opacity: 0.5;
+}
+
+.doctor-card:hover::before {
+  opacity: 0.8;
+}
+
+/* ================= TEXT ANIMATION ================= */
+.animate-text {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-text h2 {
+  transition-delay: 0.1s;
+}
+
+.animate-text p {
+  transition-delay: 0.25s;
+}
+
+/* ================================================= */
+/* 📱 TABLET & MOBILE — RESPONSIVE ONLY */
+/* ================================================= */
+@media (max-width: 900px) {
+
+  .doctors-section {
+    padding: 70px 6% 80px;
+  }
+
+  .doctors-header h2 {
+    font-size: 28px; /* vw hataya */
+  }
+
+  .doctors-header p {
+    font-size: 15px;
+  }
+
+  .doctor-image {
+    height: 260px; /* fixed for mobile */
+  }
+
+  .doctor-content h3 {
+    font-size: 20px;
+  }
+
+  .degree {
+    font-size: 14px;
+  }
+}

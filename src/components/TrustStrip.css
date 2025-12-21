@@ -1,0 +1,113 @@
+/* ================= SECTION ================= */
+.trust-strip {
+  background: #0b2f3a;
+  padding: 56px 0;
+}
+
+/* ================= GRID (DESKTOP) ================= */
+.trust-grid {
+  max-width: 1270px;
+  margin: auto;
+  padding: 0 11px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 32px;
+}
+
+/* ================= CARD ================= */
+.trust-card {
+  display: flex;
+  gap: 16px;
+  color: white;
+}
+
+.trust-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.trust-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ================= ICON ================= */
+.icon-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 27px;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box svg {
+  font-size: 2.6vw; /* DESKTOP SAME */
+  color: #7dd3c7;
+  transition: all 0.4s ease;
+}
+
+/* ================= ICON HOVER (DESKTOP) ================= */
+.trust-card:hover .icon-box {
+  background: rgba(154, 222, 213, 0.369);
+  transform: translateY(-4px);
+}
+
+.trust-card:hover svg {
+  color: #9ff3e6;
+  transform: scale(1.1);
+}
+
+/* ================= DIVIDER ================= */
+.divider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ================================================= */
+/* 📱 MOBILE ONLY — RESPONSIVE FIX (SAFE) */
+/* ================================================= */
+@media (max-width: 768px) {
+
+  .trust-strip {
+    padding: 40px 0;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .trust-card {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .icon-box {
+    padding: 14px 16px;          /* 👈 smaller icon box */
+    border-radius: 12px;
+  }
+
+  .icon-box svg {
+    font-size: 28px;             /* 👈 fixed size (vw hataya mobile pe) */
+  }
+
+  .trust-card h3 {
+    font-size: 16px;
+  }
+
+  .trust-card p {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+}
