@@ -5,6 +5,24 @@ import cerebralPalsyRehab from "../assets/images/condition/condition-cerebral-pa
 import parkinsonsPhysiotherapy from "../assets/images/condition/condition-parkinsons-disease-physiotherapy.webp";
 import multipleSclerosisRehab from "../assets/images/condition/condition-multiple-sclerosis-rehab.webp";
 import motorNeuronDiseaseALS from "../assets/images/condition/condition-motor-neuron-disease-als.webp";
+import spinalCordInjuryRehab from "../assets/images/condition/condition-spinal-cord-injury-rehab.webp";
+import cervicalLumbarMyelopathy from "../assets/images/condition/condition-cervical-lumbar-myelopathy.webp";
+import paraplegiaQuadriplegiaRehab from "../assets/images/condition/condition-paraplegia-quadriplegia-rehab.webp";
+import peripheralNeuropathyTreatment from "../assets/images/condition/condition-peripheral-neuropathy-treatment.webp";
+import guillainBarreSyndrome from "../assets/images/condition/condition-guillain-barre-syndrome.webp";
+import brachialPlexusInjury from "../assets/images/condition/condition-brachial-plexus-injury.webp";
+import nerveInjuryPostSurgical from "../assets/images/condition/condition-nerve-injury-post-surgical.webp";
+import muscularDystrophy from "../assets/images/condition/condition-neuromuscular-muscular-dystrophy-rehab.webp";
+import myopathies from "../assets/images/condition/condition-neuromuscular-myopathies-treatment.webp";
+import myastheniaGravis from "../assets/images/condition/condition-neuromuscular-myasthenia-gravis-rehab.webp";
+import postPolioSyndrome from "../assets/images/condition/condition-neuromuscular-post-polio-syndrome-rehab.webp";
+import postNeurosurgeryRehab from "../assets/images/condition/condition-functional-post-neurosurgery-rehab.webp";
+import prolongedBedRestDeconditioning from "../assets/images/condition/condition-functional-prolonged-bed-rest-deconditioning.webp";
+import gaitAbnormalitiesRehab from "../assets/images/condition/condition-functional-gait-abnormalities-rehab.webp";
+import muscleWeaknessSpasticity from "../assets/images/condition/condition-functional-muscle-weakness-spasticity.webp";
+import posturalAbnormalities from "../assets/images/condition/condition-functional-postural-abnormalities.webp";
+
+
 export const neuroConditionsData = [];
 neuroConditionsData.push(
   {
@@ -471,7 +489,7 @@ quality of life through evidence-based rehabilitation strategies.
       {
         title: "Spinal Cord Injury (SCI)",
         slug: "spinal-cord-injury-rehabilitation",
-        
+        heroImage: spinalCordInjuryRehab,
         shortDesc:
           "Comprehensive neurological physiotherapy to restore mobility, strength, and independence after spinal cord injury.",
 
@@ -506,6 +524,7 @@ maximizing recovery and preventing secondary complications.
       {
         title: "Cervical & Lumbar Myelopathy",
         slug: "cervical-lumbar-myelopathy-physiotherapy",
+        heroImage: cervicalLumbarMyelopathy,
         shortDesc:
           "Neurological physiotherapy for spinal cord compression causing weakness, balance loss, and coordination problems.",
 
@@ -539,6 +558,7 @@ movement retraining to improve safety and daily activity performance.
       {
         title: "Paraplegia & Quadriplegia",
         slug: "paraplegia-quadriplegia-rehabilitation",
+        heroImage: paraplegiaQuadriplegiaRehab,
         shortDesc:
           "Comprehensive rehabilitation programs for individuals with paralysis affecting lower or all four limbs.",
 
@@ -572,6 +592,7 @@ available muscles, wheelchair skills training, transfer training, gait training
       {
         title: "Peripheral Neuropathy",
         slug: "peripheral-neuropathy-physiotherapy",
+        heroImage: peripheralNeuropathyTreatment,
         shortDesc:
           "Physiotherapy management for nerve damage causing weakness, numbness, and balance issues.",
 
@@ -604,6 +625,7 @@ enhance safety and mobility.
       {
         title: "Guillain-Barré Syndrome (GBS)",
         slug: "guillain-barre-syndrome-rehabilitation",
+        heroImage: guillainBarreSyndrome,
         shortDesc:
           "Progressive neuro-rehabilitation for recovery from Guillain-Barré Syndrome.",
 
@@ -637,6 +659,7 @@ and fatigue management during different recovery stages.
       {
         title: "Brachial Plexus Injury",
         slug: "brachial-plexus-injury-physiotherapy",
+        heroImage: brachialPlexusInjury,
         shortDesc:
           "Targeted physiotherapy rehabilitation for nerve injuries affecting the arm and shoulder.",
 
@@ -669,6 +692,7 @@ prevention of joint stiffness.
       {
         title: "Nerve Injuries & Post-Surgical Nerve Recovery",
         slug: "nerve-injury-post-surgical-rehabilitation",
+        heroImage: nerveInjuryPostSurgical,
         shortDesc:
           "Physiotherapy rehabilitation for traumatic and post-surgical nerve injuries.",
 
@@ -712,6 +736,7 @@ independence, and improve quality of life through customized rehabilitation.
       {
         title: "Muscular Dystrophy",
         slug: "muscular-dystrophy-physiotherapy",
+        heroImage: muscularDystrophy,
         shortDesc:
           "Long-term physiotherapy management to slow progression and maintain functional independence in muscular dystrophy.",
 
@@ -744,6 +769,7 @@ stretching, assistive device training, and energy conservation techniques.
       {
         title: "Myopathies",
         slug: "myopathies-physiotherapy-treatment",
+        heroImage: myopathies,
         shortDesc:
           "Customized physiotherapy programs for muscle diseases affecting strength and endurance.",
 
@@ -775,6 +801,7 @@ to enhance daily functioning.
       {
         title: "Myasthenia Gravis",
         slug: "myasthenia-gravis-physiotherapy",
+        heroImage: myastheniaGravis,
         shortDesc:
           "Energy-efficient physiotherapy rehabilitation for neuromuscular junction disorders.",
 
@@ -806,6 +833,7 @@ excessive fatigue.
       {
         title: "Post-Polio Syndrome",
         slug: "post-polio-syndrome-physiotherapy",
+        heroImage: postPolioSyndrome,
         shortDesc:
           "Targeted physiotherapy rehabilitation to manage late-onset weakness, fatigue, and functional decline in post-polio syndrome.",
 
@@ -854,6 +882,7 @@ return to daily activities with confidence.
       {
         title: "Post-Neurosurgery Rehabilitation",
         slug: "post-neurosurgery-rehabilitation",
+        heroImage: postNeurosurgeryRehab,
         shortDesc:
           "Comprehensive physiotherapy rehabilitation after brain or spinal surgery to restore mobility, balance, and neurological function.",
 
@@ -888,6 +917,7 @@ surgical procedure and neurological status.
       {
         title: "Prolonged Bed Rest Deconditioning",
         slug: "bed-rest-deconditioning-rehabilitation",
+        heroImage: prolongedBedRestDeconditioning,
         shortDesc:
           "Physiotherapy rehabilitation to reverse weakness, stiffness, and functional decline caused by prolonged bed rest.",
 
@@ -920,6 +950,7 @@ task retraining to safely restore daily activity levels.
       {
         title: "Gait Abnormalities",
         slug: "gait-abnormalities-physiotherapy",
+        heroImage: gaitAbnormalities,
         shortDesc:
           "Specialized gait training and movement correction for neurological walking difficulties.",
 
@@ -952,6 +983,7 @@ task-specific walking practice to improve safety and efficiency.
       {
         title: "Reduced Functional Independence",
         slug: "functional-independence-rehabilitation",
+        heroImage: reducedFunctionalIndependence,
         shortDesc:
           "Functional rehabilitation programs to restore independence in daily activities affected by neurological conditions.",
 
@@ -984,6 +1016,7 @@ maximize independence and quality of life.
       {
         title: "Muscle Weakness & Spasticity",
         slug: "muscle-weakness-spasticity-physiotherapy",
+        heroImage: muscleWeaknessSpasticity,
         shortDesc:
           "Targeted neuro-physiotherapy programs to reduce spasticity and improve muscle strength and functional control.",
         overview: `
@@ -1014,6 +1047,7 @@ and independence.
       {
         title: "Gait Abnormalities",
         slug: "gait-abnormalities-physiotherapy",
+        heroImage: gaitAbnormalitiesRehab,
         shortDesc:
           "Advanced gait training programs to correct abnormal walking patterns caused by neurological conditions.",
         overview: `
@@ -1042,6 +1076,7 @@ and functional walking practice to promote safe and efficient mobility.
       {
         title: "Frequent Falls & Balance Loss",
         slug: "frequent-falls-balance-physiotherapy",
+        heroImage: frequentFalls,
         shortDesc:
           "Balance-focused physiotherapy programs to reduce fall risk and improve postural stability.",
         overview: `
@@ -1070,6 +1105,7 @@ and functional task practice to improve safety and confidence.
       {
         title: "Reduced Functional Independence",
         slug: "reduced-functional-independence-physiotherapy",
+        heroImage: reducedFunctionalIndependence,
         shortDesc:
           "Rehabilitation programs focused on restoring independence in daily activities.",
         overview: `
@@ -1098,6 +1134,7 @@ to maximize independence and participation in daily life.
       {
         title: "Postural Abnormalities",
         slug: "postural-abnormalities-neuro-physiotherapy",
+        heroImage: posturalAbnormalities,
         shortDesc:
           "Posture correction and alignment-focused physiotherapy for neurological conditions.",
         overview: `
