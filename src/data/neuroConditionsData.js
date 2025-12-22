@@ -7,6 +7,8 @@ import multipleSclerosisRehab from "../assets/images/condition/condition-multipl
 import motorNeuronDiseaseALS from "../assets/images/condition/condition-motor-neuron-disease-als.webp";
 import spinalCordInjuryRehab from "../assets/images/condition/condition-spinal-cord-injury-rehab.webp";
 import cervicalLumbarMyelopathy from "../assets/images/condition/condition-cervical-lumbar-myelopathy.webp";
+import reducedFunctionalIndependence from "../assets/images/condition/condition-reduced-functional-independence.webp";
+import frequentFalls from "../assets/images/condition/condition-frequent-falls-balance-loss.webp";
 import paraplegiaQuadriplegiaRehab from "../assets/images/condition/condition-paraplegia-quadriplegia-rehab.webp";
 import peripheralNeuropathyTreatment from "../assets/images/condition/condition-peripheral-neuropathy-treatment.webp";
 import guillainBarreSyndrome from "../assets/images/condition/condition-guillain-barre-syndrome.webp";
@@ -951,7 +953,7 @@ task retraining to safely restore daily activity levels.
       {
         title: "Gait Abnormalities",
         slug: "gait-abnormalities-physiotherapy",
-        heroImage: gaitAbnormalities,
+        heroImage: gaitAbnormalitiesRehab,
         shortDesc:
           "Specialized gait training and movement correction for neurological walking difficulties.",
 
