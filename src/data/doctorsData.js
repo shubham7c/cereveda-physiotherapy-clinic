@@ -22,7 +22,7 @@ const doctorsData = [
     name: "Dr. Mishu Garg",
     qualification: "MPT (Neurology)",
     role: "Consultant Neuro Physiotherapist",
-    experience: "Specialist in Advanced Manual Therapy",
+    experience: "Specialist in Treating Personal Nerve Injuries(Foot Drop)",
     image: Mishu,
     specialties: [
       "Dry Needling",
