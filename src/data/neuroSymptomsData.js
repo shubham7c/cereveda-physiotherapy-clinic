@@ -45,8 +45,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Balance Problems Physiotherapy Treatment | CereVeda Neuro Physiotherapy Clinic",
+          title: "Balance Problems Physiotherapy Treatment | CereVeda Neuro Physiotherapy Clinic",
           description:
             "Comprehensive physiotherapy treatment for balance problems and frequent falls caused by neurological conditions. Personalized balance rehabilitation programs at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -146,8 +145,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Muscle Weakness Physiotherapy Treatment | CereVeda Neuro Physiotherapy",
+          title: "Muscle Weakness Physiotherapy Treatment | CereVeda Neuro Physiotherapy",
           description:
             "Expert physiotherapy for muscle weakness caused by neurological conditions. Personalized strengthening and rehabilitation programs at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -194,8 +192,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Muscle Stiffness & Spasticity Treatment | CereVeda Neuro Physiotherapy",
+          title: "Muscle Stiffness & Spasticity Treatment | CereVeda Neuro Physiotherapy",
           description:
             "Specialized physiotherapy treatment for muscle stiffness and spasticity caused by neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -251,8 +248,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Tremors & Involuntary Movements Treatment | CereVeda Neuro Physiotherapy",
+          title: "Tremors & Involuntary Movements Treatment | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy treatment for tremors and involuntary movements caused by neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -267,8 +263,7 @@ export const neuroSymptomsData = [
         title: "Poor Coordination / Ataxia-like Symptoms",
         slug: "poor-coordination-ataxia",
 
-        heroSubtitle:
-          "Difficulty coordinating movements leading to clumsiness and unstable motion",
+        heroSubtitle: "Difficulty coordinating movements leading to clumsiness and unstable motion",
 
         sections: {
           overview:
@@ -299,8 +294,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Poor Coordination & Ataxia Rehabilitation | CereVeda Neuro Physiotherapy",
+          title: "Poor Coordination & Ataxia Rehabilitation | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy for poor coordination and ataxia-like symptoms caused by neurological disorders at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -346,8 +340,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Numbness & Sensory Loss Treatment | CereVeda Neuro Physiotherapy",
+          title: "Numbness & Sensory Loss Treatment | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy for numbness and sensory loss caused by neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -361,8 +354,7 @@ export const neuroSymptomsData = [
         title: "Postural Abnormalities",
         slug: "postural-abnormalities",
 
-        heroSubtitle:
-          "Abnormal sitting or standing posture due to neurological impairments",
+        heroSubtitle: "Abnormal sitting or standing posture due to neurological impairments",
 
         sections: {
           overview:
@@ -393,8 +385,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Postural Abnormalities Physiotherapy Treatment | CereVeda Neuro Physiotherapy",
+          title: "Postural Abnormalities Physiotherapy Treatment | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy treatment for postural abnormalities due to neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -449,8 +440,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Reduced Functional Independence Rehabilitation | CereVeda Neuro Physiotherapy",
+          title: "Reduced Functional Independence Rehabilitation | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy to restore functional independence after neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -496,8 +486,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "ICU-Acquired Weakness Rehabilitation | CereVeda Neuro Physiotherapy",
+          title: "ICU-Acquired Weakness Rehabilitation | CereVeda Neuro Physiotherapy",
           description:
             "Specialized physiotherapy for ICU-acquired weakness and post-critical illness recovery at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -543,8 +532,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Deconditioning Rehabilitation after Bed Rest | CereVeda Neuro Physiotherapy",
+          title: "Deconditioning Rehabilitation after Bed Rest | CereVeda Neuro Physiotherapy",
           description:
             "Physiotherapy for deconditioning and weakness after prolonged bed rest at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [
@@ -558,8 +546,7 @@ export const neuroSymptomsData = [
         title: "Paralysis (Partial / Complete)",
         slug: "paralysis-partial-complete",
 
-        heroSubtitle:
-          "Loss of voluntary movement affecting one or more parts of the body",
+        heroSubtitle: "Loss of voluntary movement affecting one or more parts of the body",
 
         sections: {
           overview:
@@ -590,8 +577,7 @@ export const neuroSymptomsData = [
         },
 
         seo: {
-          title:
-            "Paralysis Rehabilitation Physiotherapy | CereVeda Neuro Physiotherapy",
+          title: "Paralysis Rehabilitation Physiotherapy | CereVeda Neuro Physiotherapy",
           description:
             "Comprehensive physiotherapy rehabilitation for paralysis due to neurological conditions at CereVeda Neuro Physiotherapy Clinic.",
           keywords: [

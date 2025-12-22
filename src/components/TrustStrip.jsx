@@ -5,7 +5,6 @@ export default function TrustStrip() {
   return (
     <section className="trust-strip">
       <div className="trust-grid">
-
         {/* CARD 1 */}
         <div className="trust-card">
           <div className="icon-box">
@@ -14,8 +13,8 @@ export default function TrustStrip() {
           <div>
             <h3>Advanced Clinics</h3>
             <p>
-              Modern infrastructure, latest physiotherapy equipment and
-              clinically guided treatment protocols.
+              Modern infrastructure, latest physiotherapy equipment and clinically guided treatment
+              protocols.
             </p>
           </div>
         </div>
@@ -31,8 +30,8 @@ export default function TrustStrip() {
           <div>
             <h3>Professional Home Care</h3>
             <p>
-              Physiotherapy at home with expert supervision, structured plans
-              and strict quality monitoring.
+              Physiotherapy at home with expert supervision, structured plans and strict quality
+              monitoring.
             </p>
           </div>
         </div>
@@ -48,12 +47,11 @@ export default function TrustStrip() {
           <div>
             <h3>Tele / Remote Rehabilitation</h3>
             <p>
-              Personalized physio exercises at home with continuous digital
-              guidance and progress tracking.
+              Personalized physio exercises at home with continuous digital guidance and progress
+              tracking.
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

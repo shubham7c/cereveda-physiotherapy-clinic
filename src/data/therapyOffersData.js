@@ -18,8 +18,8 @@ const therapyOffersData = [
       "Brain Tumors (Pre & Post-operative)",
       "Parkinson’s Disease & Multiple Sclerosis",
       "Motor Neuron Disease (ALS / MND)",
-      "Ataxia, Dystonia & balance disorders"
-    ]
+      "Ataxia, Dystonia & balance disorders",
+    ],
   },
   {
     title: "Spinal Cord & Myelopathy Rehabilitation",
@@ -30,8 +30,8 @@ const therapyOffersData = [
       "Spinal Cord Injury (SCI)",
       "Cervical & Lumbar Myelopathy",
       "Paraplegia & Quadriplegia",
-      "Post-surgical spine rehabilitation"
-    ]
+      "Post-surgical spine rehabilitation",
+    ],
   },
   {
     title: "Peripheral Nerve & Plexus Rehabilitation",
@@ -42,20 +42,15 @@ const therapyOffersData = [
       "Peripheral Neuropathy",
       "Guillain-Barré Syndrome (GBS)",
       "Brachial Plexus Injury",
-      "Post-surgical nerve recovery"
-    ]
+      "Post-surgical nerve recovery",
+    ],
   },
   {
     title: "Neuromuscular Disorder Rehabilitation",
     image: img4,
     description:
       "Long-term rehabilitation programs for neuromuscular disorders focusing on maintaining strength, mobility, and independence.",
-    points: [
-      "Muscular Dystrophy",
-      "Myopathies",
-      "Myasthenia Gravis",
-      "Post-Polio Syndrome"
-    ]
+    points: ["Muscular Dystrophy", "Myopathies", "Myasthenia Gravis", "Post-Polio Syndrome"],
   },
   {
     title: "Post-Surgical & ICU Rehabilitation",
@@ -65,8 +60,8 @@ const therapyOffersData = [
     points: [
       "Post-neurosurgery rehabilitation",
       "ICU-acquired weakness",
-      "Prolonged bed-rest deconditioning"
-    ]
+      "Prolonged bed-rest deconditioning",
+    ],
   },
   {
     title: "Gait, Balance & Functional Training",
@@ -77,8 +72,8 @@ const therapyOffersData = [
       "Gait abnormalities",
       "Frequent falls",
       "Balance & coordination training",
-      "Postural correction"
-    ]
+      "Postural correction",
+    ],
   },
   {
     title: "Spasticity, Strength & Pain Management",
@@ -89,9 +84,9 @@ const therapyOffersData = [
       "Spasticity management",
       "Strengthening & motor control training",
       "Dry needling & soft tissue therapy",
-      "Ergonomic & daily activity training"
-    ]
-  }
+      "Ergonomic & daily activity training",
+    ],
+  },
 ];
 
 export default therapyOffersData;

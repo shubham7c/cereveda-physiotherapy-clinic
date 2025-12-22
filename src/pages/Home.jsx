@@ -9,22 +9,20 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import NeuroCareScope from "../components/NeuroCareScope";
 import FaqSection from "../components/CereVedaFAQ";
 
-
-
 function Home() {
-  return <div>
-    <Hero />
-    <TrustStrip />
-    <CareProcess /> 
-    <ConditionsSection />
-    <DoctorsSection />
-    <ClinicSection />
-    <TestimonialsSection />
-    <NeuroCareScope />
-    <FaqSection />
-    
-    
-  </div>;
+  return (
+    <div>
+      <Hero />
+      <TrustStrip />
+      <CareProcess />
+      <ConditionsSection />
+      <DoctorsSection />
+      <ClinicSection />
+      <TestimonialsSection />
+      <NeuroCareScope />
+      <FaqSection />
+    </div>
+  );
 }
 
 export default Home;

@@ -4,7 +4,7 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  
+
   padding: 19px 45px;
   border-radius: 999px;
 
@@ -16,10 +16,7 @@
 
   backdrop-filter: blur(6px);
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 /* ================= TEXT ================= */
@@ -58,7 +55,6 @@
 /* 🖥 DESKTOP HOVER EFFECTS — 🔒 DO NOT TOUCH */
 /* ================================================= */
 @media (hover: hover) and (pointer: fine) {
-
   .animated-button .text {
     transform: translateX(-6px);
     transition: transform 0.4s ease;
@@ -107,7 +103,7 @@
 /* 🔵 BLUE BUTTON */
 /* ================================================= */
 .animated-button.blue {
-  background: #0B2F3A;
+  background: #0b2f3a;
   color: #ffffff;
   box-shadow: 0 14px 30px rgba(23, 88, 134, 0.35);
 }
@@ -143,7 +139,6 @@
 /* 📱 MOBILE ONLY — REDIRECT ANIMATION (SAFE) */
 /* ================================================= */
 @media (max-width: 640px) {
-
   .animated-button {
     justify-content: center;
     font-size: 15px;
@@ -185,4 +180,3 @@
     transition: all 0.22s ease;
   }
 }
-

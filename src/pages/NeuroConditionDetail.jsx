@@ -8,8 +8,8 @@ function NeuroConditionDetail() {
   const { slug } = useParams();
 
   const condition = neuroConditionsData
-    .flatMap(section => section.conditions)
-    .find(item => item.slug === slug);
+    .flatMap((section) => section.conditions)
+    .find((item) => item.slug === slug);
 
   if (!condition) {
     return (
@@ -19,16 +19,12 @@ function NeuroConditionDetail() {
     );
   }
 
-  const symptoms =
-    condition.symptoms ||
-    condition.commonSymptoms ||
-    [];
+  const symptoms = condition.symptoms || condition.commonSymptoms || [];
 
   const physioApproach = condition.physiotherapyApproach;
 
   return (
     <div className="neuro-detail-page">
-
       {/* HERO */}
       <section className="neuro-detail-hero">
         <h1>{condition.title}</h1>
@@ -37,7 +33,6 @@ function NeuroConditionDetail() {
 
       {/* CONTENT */}
       <section className="neuro-detail-content">
-
         {condition.heroImage && (
           <div className="condition-hero-image">
             <img src={condition.heroImage} alt={condition.title} loading="lazy" />
@@ -54,7 +49,9 @@ function NeuroConditionDetail() {
         {/* SYMPTOMS */}
         {symptoms.length > 0 && (
           <div className="detail-section">
-            <h3><FaHeartbeat /> Common Symptoms</h3>
+            <h3>
+              <FaHeartbeat /> Common Symptoms
+            </h3>
             <ul className="icon-list">
               {symptoms.map((item, i) => (
                 <li key={i}>
@@ -68,7 +65,9 @@ function NeuroConditionDetail() {
         {/* PHYSIOTHERAPY */}
         {physioApproach && (
           <div className="detail-section">
-            <h3><FaWalking /> Physiotherapy & Rehabilitation Approach</h3>
+            <h3>
+              <FaWalking /> Physiotherapy & Rehabilitation Approach
+            </h3>
 
             {Array.isArray(physioApproach) ? (
               <ul className="icon-list">
@@ -87,12 +86,11 @@ function NeuroConditionDetail() {
         {/* NOTE */}
         <div className="neuro-highlight-box">
           <p>
-            At <strong>CereVeda Neuro Physiotherapy Clinic</strong>, treatment is
-            individualized and evidence-based, focusing on long-term recovery,
-            functional independence, and improved quality of life.
+            At <strong>CereVeda Neuro Physiotherapy Clinic</strong>, treatment is individualized and
+            evidence-based, focusing on long-term recovery, functional independence, and improved
+            quality of life.
           </p>
         </div>
-
       </section>
     </div>
   );

@@ -20,23 +20,16 @@ export default function TherapyOffers() {
 
   return (
     <section className="therapy-page">
-
       {/* HERO */}
       <div className="therapy-hero">
         <h1>Advanced Therapy Programs</h1>
-        <p>
-          Evidence-Based, Patient-Centered Physiotherapy Designed for
-          Long-Term Recovery
-        </p>
+        <p>Evidence-Based, Patient-Centered Physiotherapy Designed for Long-Term Recovery</p>
       </div>
 
       {/* THERAPY LIST */}
       <div className="therapy-list">
         {therapyOffersData.map((item, index) => (
-          <div
-            key={index}
-            className={`therapy-row ${index % 2 !== 0 ? "reverse" : ""}`}
-          >
+          <div key={index} className={`therapy-row ${index % 2 !== 0 ? "reverse" : ""}`}>
             {/* IMAGE */}
             <div className="therapy-image">
               <img src={item.image} alt={item.title} />
@@ -54,17 +47,13 @@ export default function TherapyOffers() {
               </ul>
 
               {/* ✅ LOADER + NAVIGATION */}
-              <button
-                className="therapy-btn"
-                onClick={handleBookConsultation}
-              >
+              <button className="therapy-btn" onClick={handleBookConsultation}>
                 Book Consultation
               </button>
             </div>
           </div>
         ))}
       </div>
-
     </section>
   );
 }

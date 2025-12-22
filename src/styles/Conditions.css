@@ -23,7 +23,7 @@
 .conditions-header h2 {
   font-size: 3vw;
   font-weight: 900;
-  color: #0B2F3A;
+  color: #0b2f3a;
 }
 
 .conditions-header p {
@@ -64,7 +64,7 @@
 
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   will-change: transform; /* 🔥 hover smooth */
-  contain: content;       /* 🔥 isolate card rendering */
+  contain: content; /* 🔥 isolate card rendering */
 }
 
 /* Kill inherited heavy effects safely */
@@ -106,7 +106,7 @@
   margin-top: 14px;
   font-size: 18px;
   font-weight: 600;
-  color: #0B2F3A;
+  color: #0b2f3a;
 }
 
 .conditions-section .condition-card p {
@@ -119,8 +119,12 @@
    MARQUEE ANIMATION (GPU SAFE)
 ===================================================== */
 @keyframes scrollLeft {
-  from { transform: translate3d(0, 0, 0); }
-  to   { transform: translate3d(-50%, 0, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 /* =====================================================
@@ -140,14 +144,17 @@
   transform: translate3d(0, 0, 0);
 }
 
-.conditions-header.show { transition-delay: 0.1s; }
-.conditions-marquee.show { transition-delay: 0.3s; }
+.conditions-header.show {
+  transition-delay: 0.1s;
+}
+.conditions-marquee.show {
+  transition-delay: 0.3s;
+}
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 @media (max-width: 900px) {
-
   .conditions-section {
     padding: 70px 0 80px;
   }

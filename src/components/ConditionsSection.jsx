@@ -4,9 +4,7 @@ import conditionsData from "../data/conditionsData";
 
 export default function ConditionsSection() {
   useEffect(() => {
-    const elements = document.querySelectorAll(
-      ".conditions-header, .conditions-marquee"
-    );
+    const elements = document.querySelectorAll(".conditions-header, .conditions-marquee");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -29,8 +27,8 @@ export default function ConditionsSection() {
       <div className="conditions-header">
         <h2>Conditions We Help You Recover From</h2>
         <p>
-          Evidence-based physiotherapy care for common pain, injuries and
-          mobility problems — delivered with personalized clinical attention.
+          Evidence-based physiotherapy care for common pain, injuries and mobility problems —
+          delivered with personalized clinical attention.
         </p>
       </div>
 

@@ -8,8 +8,14 @@
 }
 
 @keyframes pageFade {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =====================================================
@@ -45,7 +51,7 @@
   background: white;
   padding: 80px 70px;
   border-radius: 36px;
-  box-shadow: 0 35px 80px rgba(0,0,0,0.08);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.08);
 }
 
 /* =====================================================
@@ -55,7 +61,7 @@
   margin: 50px 0 60px;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 28px 60px rgba(0,0,0,0.15);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
   animation: imageReveal 1s ease-out forwards;
 }
 
@@ -149,7 +155,6 @@
    RESPONSIVE – MOBILE PREMIUM
 ===================================================== */
 @media (max-width: 768px) {
-
   .neuro-detail-hero h1 {
     font-size: 32px;
   }
@@ -191,7 +196,6 @@
    SMALL MOBILE
 ===================================================== */
 @media (max-width: 420px) {
-
   .detail-hero-image img {
     max-height: 200px;
   }

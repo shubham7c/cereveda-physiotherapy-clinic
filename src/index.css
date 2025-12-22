@@ -1,13 +1,14 @@
 @import "tailwindcss";
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
-body{
-  font-family: 'Gilroy', sans-serif;
+body {
+  font-family: "Gilroy", sans-serif;
 }
-.herotext{
-  font-family: 'Manrope', sans-serif;
+.herotext {
+  font-family: "Manrope", sans-serif;
 }
 
 /* GLOBAL MOBILE SAFETY */

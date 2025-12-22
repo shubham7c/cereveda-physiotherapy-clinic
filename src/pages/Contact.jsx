@@ -49,7 +49,6 @@ export default function Contact() {
         });
         setIsSubmitting(false);
       }, 4000);
-
     } catch {
       alert("Something went wrong. Please try again.");
       setIsSubmitting(false);
@@ -58,84 +57,46 @@ export default function Contact() {
 
   return (
     <section className="contact-page">
-
       <div className="contact-hero">
         <h1>Request a Callback</h1>
         <p>We’re just a call away — share your details and we’ll reach you.</p>
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
-
         <div className="field">
           <span className="icon">👤</span>
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" name="name" value={form.name} onChange={handleChange} required />
           <label className={form.name ? "active" : ""}>Name</label>
         </div>
 
         <div className="field">
           <span className="icon">📞</span>
-          <input
-            type="tel"
-            name="mobile"
-            value={form.mobile}
-            onChange={handleChange}
-            required
-          />
+          <input type="tel" name="mobile" value={form.mobile} onChange={handleChange} required />
           <label className={form.mobile ? "active" : ""}>Mobile No.</label>
         </div>
 
         <div className="field">
           <span className="icon">✉️</span>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
+          <input type="email" name="email" value={form.email} onChange={handleChange} />
           <label className={form.email ? "active" : ""}>Email (Optional)</label>
         </div>
 
         <div className="field">
           <span className="icon">📍</span>
-          <input
-            type="text"
-            name="city"
-            value={form.city}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" name="city" value={form.city} onChange={handleChange} required />
           <label className={form.city ? "active" : ""}>City</label>
         </div>
 
         <div className="field textarea">
-          <textarea
-            name="remark"
-            value={form.remark}
-            onChange={handleChange}
-            rows="4"
-            required
-          />
-          <label className={form.remark ? "active" : ""}>
-            Remark / Concern
-          </label>
+          <textarea name="remark" value={form.remark} onChange={handleChange} rows="4" required />
+          <label className={form.remark ? "active" : ""}>Remark / Concern</label>
         </div>
 
         <div className="checkbox">
-          <input
-            type="checkbox"
-            name="agree"
-            checked={form.agree}
-            onChange={handleChange}
-          />
+          <input type="checkbox" name="agree" checked={form.agree} onChange={handleChange} />
           <span>
-            I agree to the privacy policy and understand that my information will
-            be kept confidential.
+            I agree to the privacy policy and understand that my information will be kept
+            confidential.
           </span>
         </div>
 

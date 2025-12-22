@@ -1,4 +1,4 @@
- import Mridul from "../assets/images/DRMridul.jpeg";
+import Mridul from "../assets/images/DRMridul.jpeg";
 import Mishu from "../assets/images/Dr.Mishu.jpeg";
 
 const doctorsData = [
@@ -7,7 +7,8 @@ const doctorsData = [
     name: "Dr. Mridul Jyotsna",
     qualification: "BPT, MPT (Neurology)",
     role: "Consultant Neuro Physiotherapist",
-    experience: "Specialist in Treating Parkinson's Disease & Ex-Assistant Professor (BUEST, Solan & Chandigarh University)",
+    experience:
+      "Specialist in Treating Parkinson's Disease & Ex-Assistant Professor (BUEST, Solan & Chandigarh University)",
     image: Mridul, // portrait image
     specialties: [
       "Neurological Rehabilitation",

@@ -104,7 +104,6 @@
 /* 📱 MOBILE COMPACT — Neuro Care Scope */
 /* ================================================= */
 @media (max-width: 768px) {
-
   /* SECTION */
   .ncs-section {
     padding: 70px 5%;
@@ -116,7 +115,7 @@
   }
 
   .ncs-header h2 {
-    font-size: 26px;      /* vw hataya */
+    font-size: 26px; /* vw hataya */
   }
 
   .ncs-header p {
@@ -126,12 +125,12 @@
 
   /* GRID */
   .ncs-grid {
-    gap: 24px;           /* 42 → 24 */
+    gap: 24px; /* 42 → 24 */
   }
 
   /* CARD */
   .ncs-card {
-    padding: 22px;       /* 34 → 22 */
+    padding: 22px; /* 34 → 22 */
     border-radius: 20px;
   }
 
@@ -148,8 +147,8 @@
   /* ================= FOCUS AREA (BIG SAVIOUR) ================= */
 
   .ncs-focus {
-    margin-top: 70px;    /* 110 → 70 */
-    padding: 50px 5%;    /* 90 → 50 */
+    margin-top: 70px; /* 110 → 70 */
+    padding: 50px 5%; /* 90 → 50 */
     border-radius: 28px;
   }
 
@@ -169,7 +168,7 @@
   }
 
   /* 🔥 JUGAD: mobile pe extra chips hide */
-  .ncs-chip:nth-child(n+7) {
+  .ncs-chip:nth-child(n + 7) {
     display: none;
   }
 }

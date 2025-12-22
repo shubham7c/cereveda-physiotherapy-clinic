@@ -63,7 +63,7 @@
   background: white;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
   height: fit-content;
 }
 
@@ -137,7 +137,7 @@
   background: white;
   border-radius: 18px;
   margin-bottom: 16px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.25s ease;
 }

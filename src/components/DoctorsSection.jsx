@@ -34,8 +34,8 @@ export default function DoctorsSection() {
       <div className="doctors-header animate-text">
         <h2>Meet Our Neuro Physiotherapy Experts</h2>
         <p>
-          Experienced, qualified and clinically driven neuro physiotherapists
-          dedicated to long-term recovery and functional independence.
+          Experienced, qualified and clinically driven neuro physiotherapists dedicated to long-term
+          recovery and functional independence.
         </p>
       </div>
 
@@ -58,8 +58,6 @@ export default function DoctorsSection() {
                   <li key={i}>✓ {item}</li>
                 ))}
               </ul>
-
-              
             </div>
           </div>
         ))}

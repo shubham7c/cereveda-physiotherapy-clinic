@@ -64,7 +64,6 @@ export default function BookAppointment() {
         });
         setIsSubmitting(false); // 🔓 unlock
       }, 4000);
-
     } catch (err) {
       alert("Something went wrong. Please try again.");
       setIsSubmitting(false);
@@ -112,7 +111,14 @@ export default function BookAppointment() {
         {/* DATE */}
         <div className="field date-field">
           <span className="icon">📅</span>
-          <input type="date" name="date" min={today} value={form.date} onChange={handleChange} required />
+          <input
+            type="date"
+            name="date"
+            min={today}
+            value={form.date}
+            onChange={handleChange}
+            required
+          />
           <label className="active">Select Date</label>
         </div>
 
@@ -134,8 +140,17 @@ export default function BookAppointment() {
 
         {/* CHECKBOX */}
         <div className="checkbox">
-          <input type="checkbox" name="agree" checked={form.agree} onChange={handleChange} required />
-          <span>I agree to the privacy policy and understand that my information will be kept secure and confidential.</span>
+          <input
+            type="checkbox"
+            name="agree"
+            checked={form.agree}
+            onChange={handleChange}
+            required
+          />
+          <span>
+            I agree to the privacy policy and understand that my information will be kept secure and
+            confidential.
+          </span>
         </div>
 
         {/* SUBMIT BUTTON — SAME ANIMATION */}

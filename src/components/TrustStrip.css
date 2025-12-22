@@ -73,7 +73,6 @@
 /* 📱 MOBILE ONLY — RESPONSIVE FIX (SAFE) */
 /* ================================================= */
 @media (max-width: 768px) {
-
   .trust-strip {
     padding: 40px 0;
   }
@@ -94,12 +93,12 @@
   }
 
   .icon-box {
-    padding: 14px 16px;          /* 👈 smaller icon box */
+    padding: 14px 16px; /* 👈 smaller icon box */
     border-radius: 12px;
   }
 
   .icon-box svg {
-    font-size: 28px;             /* 👈 fixed size (vw hataya mobile pe) */
+    font-size: 28px; /* 👈 fixed size (vw hataya mobile pe) */
   }
 
   .trust-card h3 {

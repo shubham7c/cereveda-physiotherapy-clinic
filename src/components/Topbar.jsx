@@ -49,9 +49,7 @@ function Topbar() {
           {/* RIGHT : SOCIALS (hide on mobile) */}
           <div className="hidden sm:flex gap-4 items-center text-base">
             <button
-              onClick={() =>
-                handleRedirect("https://www.facebook.com/CLIENTUSERNAME")
-              }
+              onClick={() => handleRedirect("https://www.facebook.com/CLIENTUSERNAME")}
               className="hover:text-[#9fd3d0] transition"
               aria-label="Facebook"
             >
@@ -59,9 +57,7 @@ function Topbar() {
             </button>
 
             <button
-              onClick={() =>
-                handleRedirect("https://www.instagram.com/CLIENTUSERNAME")
-              }
+              onClick={() => handleRedirect("https://www.instagram.com/CLIENTUSERNAME")}
               className="hover:text-[#9fd3d0] transition"
               aria-label="Instagram"
             >
@@ -69,11 +65,7 @@ function Topbar() {
             </button>
 
             <button
-              onClick={() =>
-                handleRedirect(
-                  "https://www.linkedin.com/company/CLIENTUSERNAME"
-                )
-              }
+              onClick={() => handleRedirect("https://www.linkedin.com/company/CLIENTUSERNAME")}
               className="hover:text-[#9fd3d0] transition"
               aria-label="LinkedIn"
             >

@@ -35,8 +35,8 @@ export default function ClinicSection() {
       {/* STATIC HEADING */}
       <h2 className="clinic-title">ADVANCED PHYSIOTHERAPY CLINICS</h2>
       <p className="clinic-subtitle">
-        Experience expert physiotherapy at our advanced clinic equipped with
-        modern technology for long-term recovery.
+        Experience expert physiotherapy at our advanced clinic equipped with modern technology for
+        long-term recovery.
       </p>
 
       <div className="clinic-wrapper">
@@ -69,13 +69,11 @@ export default function ClinicSection() {
             <span className="rating-number">5.0</span>
           </div>
 
-          <p className="clinic-type">
-            Specialised in Neuro-Rehabilitation & Paediatric Cases.
-          </p>
+          <p className="clinic-type">Specialised in Neuro-Rehabilitation & Paediatric Cases.</p>
 
           <p className="clinic-address">
-            Sco 9, Corner.  Lower Ground, to, kharar. NH, opposite gulmohar
-            complex, Sector 126, Model Town, Chandigarh, Kharar, Punjab 140301
+            Sco 9, Corner. Lower Ground, to, kharar. NH, opposite gulmohar complex, Sector 126,
+            Model Town, Chandigarh, Kharar, Punjab 140301
           </p>
 
           <p className="clinic-time">🕒 Opening Hours: 10:00 AM – 5:00 PM</p>

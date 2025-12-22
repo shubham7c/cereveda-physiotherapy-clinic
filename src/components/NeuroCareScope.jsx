@@ -27,9 +27,8 @@ export default function NeuroCareScope() {
       <div className="ncs-header">
         <h2>Conditions We Treat at CereVeda</h2>
         <p>
-          As specialized Neurology Physiotherapists (BPT, MPT – Neurology), we
-          provide evidence-based rehabilitation focused on recovery,
-          independence and quality of life.
+          As specialized Neurology Physiotherapists (BPT, MPT – Neurology), we provide
+          evidence-based rehabilitation focused on recovery, independence and quality of life.
         </p>
       </div>
 

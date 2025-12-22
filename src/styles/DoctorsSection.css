@@ -52,7 +52,7 @@
 
 /* ================= CARD ================= */
 .doctor-card {
-  background: #0B2F3A;
+  background: #0b2f3a;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -60,10 +60,7 @@
   transform: translateY(40px);
   opacity: 0;
 
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease,
-    box-shadow 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
 
   will-change: transform, opacity; /* 👈 huge lag fix */
 }
@@ -160,11 +157,7 @@
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background: radial-gradient(
-    circle at top left,
-    rgba(32, 201, 181, 0.25),
-    transparent 60%
-  );
+  background: radial-gradient(circle at top left, rgba(32, 201, 181, 0.25), transparent 60%);
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -202,7 +195,6 @@
 /* 📱 TABLET & MOBILE — RESPONSIVE ONLY */
 /* ================================================= */
 @media (max-width: 900px) {
-
   .doctors-section {
     padding: 70px 6% 80px;
   }

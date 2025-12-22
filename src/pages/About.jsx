@@ -11,7 +11,6 @@ export default function About() {
 
   return (
     <section className="about-page">
-
       {/* HERO */}
       <div className="about-hero reveal">
         <h1>About CereVeda</h1>
@@ -28,30 +27,26 @@ export default function About() {
         </h2>
 
         <p>
-          <strong>CereVeda Physiotherapy Clinic</strong> is a modern,
-          evidence-based physiotherapy center located in Mohali, focused on
-          restoring movement, confidence, independence, and long-term functional
-          recovery.
+          <strong>CereVeda Physiotherapy Clinic</strong> is a modern, evidence-based physiotherapy
+          center located in Mohali, focused on restoring movement, confidence, independence, and
+          long-term functional recovery.
         </p>
 
         <p>
-          We strongly believe physiotherapy is not a quick fix. Every patient
-          journey at CereVeda begins with identifying the{" "}
-          <strong>root cause</strong> of pain, neurological dysfunction, or
-          movement limitation and then designing structured rehabilitation
-          programs for sustainable results.
+          We strongly believe physiotherapy is not a quick fix. Every patient journey at CereVeda
+          begins with identifying the <strong>root cause</strong> of pain, neurological dysfunction,
+          or movement limitation and then designing structured rehabilitation programs for
+          sustainable results.
         </p>
 
         <p>
-          Our clinical approach integrates neurological rehabilitation, manual
-          therapy, dry needling, postural correction, balance training, gait
-          re-education, strengthening programs, and functional retraining —
-          helping patients regain control over their daily lives.
+          Our clinical approach integrates neurological rehabilitation, manual therapy, dry
+          needling, postural correction, balance training, gait re-education, strengthening
+          programs, and functional retraining — helping patients regain control over their daily
+          lives.
         </p>
 
-        <strong className="highlight">
-          Trusted Neuro & Functional Rehabilitation Care
-        </strong>
+        <strong className="highlight">Trusted Neuro & Functional Rehabilitation Care</strong>
       </section>
 
       {/* MARQUEE */}
@@ -80,9 +75,7 @@ export default function About() {
 
       {/* TESTIMONIALS */}
       <section className="about-testimonials reveal">
-        <span className="section-tag">
-          Happiness On Our Patient’s Faces Is What Drives Us
-        </span>
+        <span className="section-tag">Happiness On Our Patient’s Faces Is What Drives Us</span>
 
         <h2>What Patients Say About Us</h2>
 
@@ -91,8 +84,8 @@ export default function About() {
             ⭐⭐⭐⭐⭐
             <h4>Excellent Care & Professional Approach</h4>
             <p>
-              The structured rehabilitation approach helped me regain confidence,
-              mobility, and independence.
+              The structured rehabilitation approach helped me regain confidence, mobility, and
+              independence.
             </p>
             <span>— Patient</span>
           </div>
@@ -100,19 +93,14 @@ export default function About() {
           <div className="testimonial-card hover-lift reveal">
             ⭐⭐⭐⭐⭐
             <h4>Focused Therapy With Real Results</h4>
-            <p>
-              CereVeda truly focuses on long-term recovery rather than short-term
-              pain relief.
-            </p>
+            <p>CereVeda truly focuses on long-term recovery rather than short-term pain relief.</p>
             <span>— Patient</span>
           </div>
 
           <div className="testimonial-card hover-lift reveal">
             ⭐⭐⭐⭐⭐
             <h4>Highly Recommended Neuro Care</h4>
-            <p>
-              Excellent neurological rehabilitation with personal attention.
-            </p>
+            <p>Excellent neurological rehabilitation with personal attention.</p>
             <span>— Patient</span>
           </div>
         </div>
@@ -128,27 +116,21 @@ export default function About() {
             <img src={DrMishu} alt="Dr Mishu Garg" />
             <h3>Dr. Mishu Garg</h3>
             <span>MPT (Neurology)</span>
-            <p>
-              Dr. Mishu Garg is a highly experienced neuro-physiotherapist.
-            </p>
+            <p>Dr. Mishu Garg is a highly experienced neuro-physiotherapist.</p>
           </div>
 
           <div className="founder-card hover-lift reveal">
             <img src={DrMridul} alt="Dr Mridul Jyotsna" />
             <h3>Dr. Mridul Jyotsna</h3>
             <span>BPT, MPT (Neurology)</span>
-            <p>
-              Dr. Mridul Jyotsna is an expert in neurological rehabilitation.
-            </p>
+            <p>Dr. Mridul Jyotsna is an expert in neurological rehabilitation.</p>
           </div>
         </div>
       </section>
 
       {/* WHY CHOOSE */}
       <section className="about-why reveal">
-        <span className="section-tag">
-          Treatment That Blends Competence With Compassion
-        </span>
+        <span className="section-tag">Treatment That Blends Competence With Compassion</span>
 
         <h2>Why Choose CereVeda Physiotherapy</h2>
 
@@ -179,7 +161,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
     </section>
   );
 }

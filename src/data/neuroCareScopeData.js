@@ -29,12 +29,7 @@ const neuroCareScopeData = {
     },
     {
       title: "Neuromuscular Disorders",
-      items: [
-        "Muscular Dystrophy",
-        "Myopathies",
-        "Myasthenia Gravis",
-        "Post-Polio Syndrome",
-      ],
+      items: ["Muscular Dystrophy", "Myopathies", "Myasthenia Gravis", "Post-Polio Syndrome"],
     },
     {
       title: "Post-Surgical & Hospital Rehabilitation",

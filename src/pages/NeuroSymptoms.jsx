@@ -7,14 +7,12 @@ import { FaCheckCircle } from "react-icons/fa";
 function NeuroSymptoms() {
   return (
     <div className="neuro-conditions-page">
-      
       {/* HERO */}
       <section className="neuro-hero">
         <h1>Neurological Symptoms We Treat</h1>
         <p>
-          At CereVeda Neuro Physiotherapy Clinic, we provide specialized
-          neurological rehabilitation focused on relieving symptoms,
-          restoring function, and improving quality of life through
+          At CereVeda Neuro Physiotherapy Clinic, we provide specialized neurological rehabilitation
+          focused on relieving symptoms, restoring function, and improving quality of life through
           evidence-based physiotherapy.
         </p>
       </section>
@@ -23,29 +21,21 @@ function NeuroSymptoms() {
       <section className="neuro-conditions-wrapper">
         {neuroSymptomsData.map((category, index) => (
           <div className="neuro-category reveal" key={index}>
-            
             {/* CATEGORY HEADING */}
             <h2>{category.category}</h2>
 
             {/* CATEGORY INTRO */}
-            {category.categoryIntro && (
-              <p className="category-intro">{category.categoryIntro}</p>
-            )}
+            {category.categoryIntro && <p className="category-intro">{category.categoryIntro}</p>}
 
             {/* GRID */}
             <div className="conditions-grid">
               {Array.isArray(category.conditions) &&
                 category.conditions.map((symptom, idx) => (
                   <div className="condition-card" key={idx}>
-
                     {/* CARD IMAGE (LISTING IMAGE) */}
                     {symptom.image && (
                       <div className="condition-image">
-                        <img
-                          src={symptom.image}
-                          alt={symptom.title}
-                          loading="lazy"
-                        />
+                        <img src={symptom.image} alt={symptom.title} loading="lazy" />
                       </div>
                     )}
 
@@ -55,21 +45,16 @@ function NeuroSymptoms() {
 
                       {/* SHORT POINTS (from sections.symptoms OR fallback) */}
                       <ul className="condition-points">
-                        {(symptom.sections?.symptoms || [])
-                          .slice(0, 4)
-                          .map((point, i) => (
-                            <li key={i}>
-                              <FaCheckCircle />
-                              {point}
-                            </li>
-                          ))}
+                        {(symptom.sections?.symptoms || []).slice(0, 4).map((point, i) => (
+                          <li key={i}>
+                            <FaCheckCircle />
+                            {point}
+                          </li>
+                        ))}
                       </ul>
 
                       {/* CTA */}
-                      <Link
-                        to={`/symptoms-we-treat/${symptom.slug}`}
-                        className="read-more"
-                      >
+                      <Link to={`/symptoms-we-treat/${symptom.slug}`} className="read-more">
                         Explore Symptom →
                       </Link>
                     </div>

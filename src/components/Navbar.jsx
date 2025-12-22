@@ -35,7 +35,6 @@ function Navbar() {
   return (
     <nav className="w-full bg-white text-[#404041] sticky top-0 z-9999">
       <div className="max-w-300 mx-auto px-3 py-2 flex justify-between items-center">
-
         {/* LOGO */}
         <div
           onClick={() => {
@@ -46,32 +45,30 @@ function Navbar() {
           }}
           className="h-25 w-40 rounded-xl overflow-hidden flex items-center cursor-pointer"
         >
-          <img
-            className="h-full w-full object-cover scale-[1.6]"
-            src={logo}
-            alt="CereVeda Logo"
-          />
+          <img className="h-full w-full object-cover scale-[1.6]" src={logo} alt="CereVeda Logo" />
         </div>
 
         {/* DESKTOP MENU */}
         <div className="hidden lg:flex items-center gap-8 font-semibold text-lg">
-          <Link className="hover:text-[#4c9bd4]" to="/">Home</Link>
-          <Link className="hover:text-[#4c9bd4]" to="/about-us">About Us</Link>
-          <Link className="hover:text-[#4c9bd4]" to="/contact-us">Contact Us</Link>
-          <Link className="hover:text-[#4c9bd4]" to="/therapy-offers">Therapy Offers</Link>
+          <Link className="hover:text-[#4c9bd4]" to="/">
+            Home
+          </Link>
+          <Link className="hover:text-[#4c9bd4]" to="/about-us">
+            About Us
+          </Link>
+          <Link className="hover:text-[#4c9bd4]" to="/contact-us">
+            Contact Us
+          </Link>
+          <Link className="hover:text-[#4c9bd4]" to="/therapy-offers">
+            Therapy Offers
+          </Link>
 
           {/* DROPDOWN */}
-          <div
-            className="relative"
-            onMouseEnter={handleEnter}
-            onMouseLeave={handleLeave}
-          >
+          <div className="relative" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             <button className="flex items-center gap-1 hover:text-[#4c9bd4]">
               Patient Education
               <IoIosArrowDown
-                className={`transition-transform duration-300 ${
-                  educationOpen ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${educationOpen ? "rotate-180" : ""}`}
               />
             </button>
 
@@ -96,7 +93,9 @@ function Navbar() {
             </div>
           </div>
 
-          <Link className="hover:text-[#4c9bd4]" to="/faq">FAQ</Link>
+          <Link className="hover:text-[#4c9bd4]" to="/faq">
+            FAQ
+          </Link>
 
           <a
             href="https://maps.app.goo.gl/dmqzKKzhkEkq4emT9"
@@ -126,7 +125,6 @@ function Navbar() {
         `}
       >
         <div className="space-y-5 font-semibold text-lg">
-
           <Link to="/" className="block" onClick={() => setMenuOpen(false)}>
             Home
           </Link>
@@ -151,9 +149,7 @@ function Navbar() {
             >
               Patient Education
               <IoIosArrowDown
-                className={`transition-transform duration-300 ${
-                  educationOpen ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${educationOpen ? "rotate-180" : ""}`}
               />
             </button>
 

@@ -52,7 +52,7 @@
 
 /* ================= ICON ================= */
 .cp-icon {
-  margin-left: 4.9vw;   /* DESKTOP SAME */
+  margin-left: 4.9vw; /* DESKTOP SAME */
   width: 69px;
   height: 69px;
   background: #0b2f3a;
@@ -84,12 +84,7 @@
 .cp-line {
   width: 70px;
   height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(11, 47, 58, 0.3),
-    transparent
-  );
+  background: linear-gradient(to right, transparent, rgba(11, 47, 58, 0.3), transparent);
   align-self: center;
 }
 
@@ -102,9 +97,15 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ================= SCROLL ANIMATION ================= */
@@ -123,19 +124,30 @@
   transform: translateY(0);
 }
 
-.cp-card:nth-child(1).show { transition-delay: 0.1s; }
-.cp-card:nth-child(3).show { transition-delay: 0.25s; }
-.cp-card:nth-child(5).show { transition-delay: 0.4s; }
-.cp-card:nth-child(7).show { transition-delay: 0.55s; }
+.cp-card:nth-child(1).show {
+  transition-delay: 0.1s;
+}
+.cp-card:nth-child(3).show {
+  transition-delay: 0.25s;
+}
+.cp-card:nth-child(5).show {
+  transition-delay: 0.4s;
+}
+.cp-card:nth-child(7).show {
+  transition-delay: 0.55s;
+}
 
-.cp-title.show { transition-delay: 0.05s; }
-.cp-subtitle.show { transition-delay: 0.2s; }
+.cp-title.show {
+  transition-delay: 0.05s;
+}
+.cp-subtitle.show {
+  transition-delay: 0.2s;
+}
 
 /* ================================================= */
 /* 📱 TABLET & MOBILE — RESPONSIVE ONLY */
 /* ================================================= */
 @media (max-width: 900px) {
-
   .care-process {
     padding: 70px 6% 80px;
   }
@@ -165,7 +177,7 @@
   }
 
   .cp-icon {
-    margin: 0 auto 14px;   /* 👈 FIXED CENTER */
+    margin: 0 auto 14px; /* 👈 FIXED CENTER */
     width: 60px;
     height: 60px;
     font-size: 24px;

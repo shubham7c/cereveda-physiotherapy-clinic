@@ -43,10 +43,7 @@ function App() {
           {/* NEW ROUTES */}
           <Route path="/therapy-offers" element={<TherapyOffers />} />
           <Route path="/conditions-we-treat" element={<NeuroConditions />} />
-          <Route
-            path="/conditions-we-treat/:slug"
-            element={<NeuroConditionDetail />}
-          />
+          <Route path="/conditions-we-treat/:slug" element={<NeuroConditionDetail />} />
           <Route path="/symptoms-we-treat" element={<NeuroSymptoms />} />
           <Route path="/symptoms-we-treat/:slug" element={<NeuroSymptomDetail />} />
         </Routes>

@@ -5,8 +5,8 @@ export default function useReveal() {
     const elements = document.querySelectorAll(".reveal");
 
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("active");
           }
@@ -15,7 +15,7 @@ export default function useReveal() {
       { threshold: 0.15 }
     );
 
-    elements.forEach(el => observer.observe(el));
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);

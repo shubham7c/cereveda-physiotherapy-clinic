@@ -2,7 +2,7 @@
    SECTION
 =============================== */
 .testimonials-section {
-  background: #0B2F3A;
+  background: #0b2f3a;
   padding: 80px 0;
   overflow: hidden;
   text-align: center;
@@ -31,14 +31,14 @@
 .marquee {
   margin-bottom: 22px;
   overflow: visible;
-  min-height: 220px;           /* 🔥 MOBILE BLANK FIX */
+  min-height: 220px; /* 🔥 MOBILE BLANK FIX */
 }
 
 .marquee-track {
   display: flex;
   gap: 18px;
   width: max-content;
-  white-space: wrap;         /* 🔥 REQUIRED */
+  white-space: wrap; /* 🔥 REQUIRED */
   animation: marquee-left 85s linear infinite;
 }
 
@@ -57,16 +57,14 @@
   box-shadow: 0 14px 30px rgba(4, 39, 50, 0.863);
   text-align: left;
 
-  display: flex;               /* 🔥 FIX NAME ISSUE */
+  display: flex; /* 🔥 FIX NAME ISSUE */
   flex-direction: column;
   flex-shrink: 0;
 }
 .testimonial-card:hover {
-
   transform: translateY(-4px);
   transition: all 0.3s ease;
 }
-
 
 /* ===============================
    STARS
@@ -95,8 +93,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #0b2f3a;
-  margin-top: 10px;            /* 🔥 PUSH TO BOTTOM */
- 
+  margin-top: 10px; /* 🔥 PUSH TO BOTTOM */
 }
 
 /* ===============================
@@ -123,7 +120,6 @@
    📱 MOBILE FORCE FIX (LIKE NAME FIX)
    ========================================= */
 @media (max-width: 768px) {
-
   /* SECTION */
   .testimonials-section {
     padding: 56px 0 !important;
@@ -146,7 +142,7 @@
   /* 🔥 THIS IS THE REAL FIX */
   .marquee .marquee-track {
     display: flex !important;
-    flex-wrap: nowrap !important;     /* 🔑 SAME AS NAME FIX */
+    flex-wrap: nowrap !important; /* 🔑 SAME AS NAME FIX */
     width: max-content !important;
     gap: 14px !important;
 

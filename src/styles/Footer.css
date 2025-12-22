@@ -1,5 +1,5 @@
 .footer {
-  background: #0B2F3A;
+  background: #0b2f3a;
   color: #ffffff;
   padding-top: 0;
   font-family: "Inter", sans-serif;
@@ -53,7 +53,7 @@
 .footer-socials a {
   width: 36px;
   height: 36px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@
 
 .footer-socials a:hover {
   background: #ffffff;
-  color: #0B2F3A;
+  color: #0b2f3a;
 }
 
 /* LINKS */
@@ -109,7 +109,7 @@
   padding: 10px 20px;
   border-radius: 24px;
   background: #ffffff;
-  color: #0B2F3A;
+  color: #0b2f3a;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -124,7 +124,7 @@
 .footer-bottom {
   margin-top: 60px;
   padding: 20px 6%;
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,20 +164,19 @@
 /* 📱 MOBILE COMPACT — FOOTER */
 /* ================================================= */
 @media (max-width: 768px) {
-
   /* Top divider spacing reduce */
   .footer-glow-divider {
-    margin-bottom: 30px;      /* 50 → 30 */
+    margin-bottom: 30px; /* 50 → 30 */
   }
 
   /* Main grid */
   .footer-container {
-    gap: 28px;                /* 80 → 28 */
+    gap: 28px; /* 80 → 28 */
   }
 
   /* Brand */
   .footer-brand img {
-    width: 150px;             /* slightly smaller */
+    width: 150px; /* slightly smaller */
     margin-bottom: 14px;
   }
 
@@ -222,7 +221,7 @@
 
   /* Bottom bar */
   .footer-bottom {
-    margin-top: 34px;         /* 60 → 34 */
+    margin-top: 34px; /* 60 → 34 */
     padding: 16px 6%;
     font-size: 12px;
   }

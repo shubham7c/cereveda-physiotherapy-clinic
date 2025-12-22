@@ -14,24 +14,17 @@ export default function CereVedaFAQ() {
       <div className="faq-wrapper">
         <h2 className="faq-title">Frequently Asked Questions</h2>
         <p className="faq-subtitle">
-          Answers to common questions about neurological physiotherapy and rehabilitation at CereVeda.
+          Answers to common questions about neurological physiotherapy and rehabilitation at
+          CereVeda.
         </p>
 
         <div className="faq-list">
           {faqData.map((item, index) => (
-            <div
-              key={index}
-              className={`faq-item ${openIndex === index ? "open" : ""}`}
-            >
+            <div key={index} className={`faq-item ${openIndex === index ? "open" : ""}`}>
               {/* 👇 click ONLY here */}
-              <div
-                className="faq-question"
-                onClick={() => toggleFAQ(index)}
-              >
+              <div className="faq-question" onClick={() => toggleFAQ(index)}>
                 <span>{item.q}</span>
-                <span className="faq-icon">
-                  {openIndex === index ? "−" : "+"}
-                </span>
+                <span className="faq-icon">{openIndex === index ? "−" : "+"}</span>
               </div>
 
               <div className="faq-answer">

@@ -24,8 +24,6 @@ import gaitAbnormalitiesRehab from "../assets/images/condition/condition-gait-ab
 import muscleWeaknessSpasticity from "../assets/images/condition/condition-muscle-weakness-spasticity.webp";
 import posturalAbnormalities from "../assets/images/condition/condition-postural-abnormalities.webp";
 
-
-
 export const neuroConditionsData = [];
 neuroConditionsData.push(
   {
@@ -112,8 +110,7 @@ active participation in daily and social activities.
   `,
 
         seo: {
-          title:
-            "Stroke Physiotherapy Rehabilitation in Mohali | CereVeda Neuro Physiotherapy",
+          title: "Stroke Physiotherapy Rehabilitation in Mohali | CereVeda Neuro Physiotherapy",
           description:
             "Expert stroke physiotherapy rehabilitation at CereVeda focusing on mobility, balance, spasticity management, and functional independence after stroke.",
         },
@@ -187,8 +184,7 @@ improvements in mobility, independence, and overall function over time.
   `,
 
         seo: {
-          title:
-            "Traumatic Brain Injury Physiotherapy in Mohali | CereVeda Neuro Rehab",
+          title: "Traumatic Brain Injury Physiotherapy in Mohali | CereVeda Neuro Rehab",
           description:
             "Advanced physiotherapy rehabilitation for traumatic brain injury focusing on balance, mobility, cognition, and functional recovery.",
         },
@@ -259,8 +255,7 @@ abilities, improve mobility, and return to meaningful daily activities.
   `,
 
         seo: {
-          title:
-            "Brain Tumor Rehabilitation Physiotherapy in Mohali | CereVeda Neuro Care",
+          title: "Brain Tumor Rehabilitation Physiotherapy in Mohali | CereVeda Neuro Care",
           description:
             "Expert neuro-physiotherapy rehabilitation for brain tumor patients focusing on mobility, balance, strength, and functional recovery.",
         },
@@ -586,8 +581,7 @@ available muscles, wheelchair skills training, transfer training, gait training
   `,
 
         seo: {
-          title:
-            "Paraplegia & Quadriplegia Physiotherapy Rehabilitation | CereVeda",
+          title: "Paraplegia & Quadriplegia Physiotherapy Rehabilitation | CereVeda",
           description:
             "Advanced physiotherapy rehabilitation for paraplegia and quadriplegia focusing on independence and quality of life.",
         },
@@ -629,8 +623,7 @@ enhance safety and mobility.
         title: "Guillain-Barré Syndrome (GBS)",
         slug: "guillain-barre-syndrome-rehabilitation",
         heroImage: guillainBarreSyndrome,
-        shortDesc:
-          "Progressive neuro-rehabilitation for recovery from Guillain-Barré Syndrome.",
+        shortDesc: "Progressive neuro-rehabilitation for recovery from Guillain-Barré Syndrome.",
 
         overview: `
 Guillain-Barré Syndrome is an acute autoimmune neurological disorder where the
@@ -696,8 +689,7 @@ prevention of joint stiffness.
         title: "Nerve Injuries & Post-Surgical Nerve Recovery",
         slug: "nerve-injury-post-surgical-rehabilitation",
         heroImage: nerveInjuryPostSurgical,
-        shortDesc:
-          "Physiotherapy rehabilitation for traumatic and post-surgical nerve injuries.",
+        shortDesc: "Physiotherapy rehabilitation for traumatic and post-surgical nerve injuries.",
 
         overview: `
 Peripheral nerve injuries may result from trauma, fractures, compression, or
@@ -1109,8 +1101,7 @@ and functional task practice to improve safety and confidence.
         title: "Reduced Functional Independence",
         slug: "reduced-functional-independence-physiotherapy",
         heroImage: reducedFunctionalIndependence,
-        shortDesc:
-          "Rehabilitation programs focused on restoring independence in daily activities.",
+        shortDesc: "Rehabilitation programs focused on restoring independence in daily activities.",
         overview: `
 Reduced functional independence occurs when neurological conditions limit a
 person’s ability to perform daily activities such as walking, dressing,

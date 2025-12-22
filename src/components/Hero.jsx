@@ -39,8 +39,7 @@ function Hero() {
       >
         {/* SEO HIDDEN H2 */}
         <h2 className="sr-only">
-          Best Physiotherapy Clinic for Pain Relief, Injury Recovery and
-          Mobility Improvement
+          Best Physiotherapy Clinic for Pain Relief, Injury Recovery and Mobility Improvement
         </h2>
 
         {/* HEADING */}
@@ -66,8 +65,8 @@ function Hero() {
             drop-shadow-md
           "
         >
-          Personalized physiotherapy programs designed to reduce pain, restore
-          movement, and improve everyday quality of life.
+          Personalized physiotherapy programs designed to reduce pain, restore movement, and improve
+          everyday quality of life.
         </p>
 
         {/* CTA BUTTONS */}
@@ -80,17 +79,9 @@ function Hero() {
             items-center
           "
         >
-          <AnimatedButton
-            text="Book Appointment"
-            href="/book-appointment"
-            color="blue"
-          />
+          <AnimatedButton text="Book Appointment" href="/book-appointment" color="blue" />
 
-          <AnimatedButton
-            text="Request Callback"
-            href="/contact-us"
-            color="green"
-          />
+          <AnimatedButton text="Request Callback" href="/contact-us" color="green" />
         </div>
       </div>
     </section>

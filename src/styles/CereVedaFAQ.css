@@ -81,27 +81,26 @@
 /* 📱 MOBILE COMPACT — FAQ SECTION */
 /* ================================================= */
 @media (max-width: 768px) {
-
   .cereveda-faq {
-    padding: 65px 16px;        /* 🔽 from 100px */
+    padding: 65px 16px; /* 🔽 from 100px */
   }
 
   .faq-title {
-    font-size: 26px;           /* vw hataya */
+    font-size: 26px; /* vw hataya */
   }
 
   .faq-subtitle {
     font-size: 14px;
     margin-top: 10px;
-    margin-bottom: 32px;       /* 🔽 from 50 */
+    margin-bottom: 32px; /* 🔽 from 50 */
   }
 
   .faq-list {
-    gap: 14px;                 /* 🔽 from 18 */
+    gap: 14px; /* 🔽 from 18 */
   }
 
   .faq-item {
-    padding: 18px 20px;        /* 🔽 tighter card */
+    padding: 18px 20px; /* 🔽 tighter card */
     border-radius: 14px;
   }
 
