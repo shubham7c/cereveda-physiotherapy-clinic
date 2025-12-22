@@ -1,4 +1,4 @@
-import stroke from "../assets/images/condition/stroke.jpg";
+import stroke from "../assets/images/condition/stroke.webp";
 export const neuroConditionsData = [];
 neuroConditionsData.push({
   category: "Brain & Central Nervous System Conditions",
