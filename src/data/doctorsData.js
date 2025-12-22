@@ -7,7 +7,7 @@ const doctorsData = [
     name: "Dr. Mridul Jyotsna",
     qualification: "BPT, MPT (Neurology)",
     role: "Consultant Neuro Physiotherapist",
-    experience: "Ex-Assistant Professor (BUEST, Solan & Chandigarh University)",
+    experience: "Specialist in Treating Parkinson's Disease & Ex-Assistant Professor (BUEST, Solan & Chandigarh University)",
     image: Mridul, // portrait image
     specialties: [
       "Neurological Rehabilitation",
