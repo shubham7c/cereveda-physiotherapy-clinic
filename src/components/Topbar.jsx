@@ -24,7 +24,7 @@ function Topbar() {
         <div className="max-w-300 mx-auto px-4 h-9 flex items-center justify-between text-sm">
           {/* LEFT : CALL */}
           <a
-            href="tel:+919876543210"
+            href="tel:+917973113090"
             className="flex items-center gap-2 font-medium hover:text-[#9fd3d0] transition"
           >
             <FiPhoneCall className="text-base" />
@@ -36,7 +36,7 @@ function Topbar() {
           <button
             onClick={() =>
               handleRedirect(
-                "https://wa.me/919876543210?text=Hello%20I%20want%20to%20book%20an%20appointment"
+                "https://wa.me/917973113090?text=Hello%20I%20want%20to%20book%20an%20appointment"
               )
             }
             className="flex items-center gap-2 font-medium hover:text-[#9fd3d0] transition"
