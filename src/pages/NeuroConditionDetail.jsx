@@ -33,7 +33,7 @@ function NeuroConditionDetail() {
 
         {condition.heroImage && (
   <div className="condition-hero-image">
-    <img src={condition.heroImage} alt={condition.title} />
+    <img src={condition.heroImage} alt={condition.title} loading="lazy"/>
   </div>
 )}
 
