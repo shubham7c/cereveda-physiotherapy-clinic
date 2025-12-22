@@ -19,6 +19,13 @@ function NeuroConditionDetail() {
     );
   }
 
+  const symptoms =
+    condition.symptoms ||
+    condition.commonSymptoms ||
+    [];
+
+  const physioApproach = condition.physiotherapyApproach;
+
   return (
     <div className="neuro-detail-page">
 
@@ -32,13 +39,11 @@ function NeuroConditionDetail() {
       <section className="neuro-detail-content">
 
         {condition.heroImage && (
-  <div className="condition-hero-image">
-    <img src={condition.heroImage} alt={condition.title} loading="lazy"/>
-  </div>
-)}
+          <div className="condition-hero-image">
+            <img src={condition.heroImage} alt={condition.title} loading="lazy" />
+          </div>
+        )}
 
-
-        {/* OVERVIEW */}
         {condition.overview && (
           <>
             <h2>Understanding {condition.title}</h2>
@@ -47,11 +52,11 @@ function NeuroConditionDetail() {
         )}
 
         {/* SYMPTOMS */}
-        {condition.symptoms && (
+        {symptoms.length > 0 && (
           <div className="detail-section">
             <h3><FaHeartbeat /> Common Symptoms</h3>
             <ul className="icon-list">
-              {condition.symptoms.map((item, i) => (
+              {symptoms.map((item, i) => (
                 <li key={i}>
                   <FaCheckCircle /> {item}
                 </li>
@@ -61,10 +66,21 @@ function NeuroConditionDetail() {
         )}
 
         {/* PHYSIOTHERAPY */}
-        {condition.physiotherapyApproach && (
+        {physioApproach && (
           <div className="detail-section">
             <h3><FaWalking /> Physiotherapy & Rehabilitation Approach</h3>
-            <p>{condition.physiotherapyApproach}</p>
+
+            {Array.isArray(physioApproach) ? (
+              <ul className="icon-list">
+                {physioApproach.map((item, i) => (
+                  <li key={i}>
+                    <FaCheckCircle /> {item}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>{physioApproach}</p>
+            )}
           </div>
         )}
 
