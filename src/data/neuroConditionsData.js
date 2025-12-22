@@ -12,10 +12,10 @@ import peripheralNeuropathyTreatment from "../assets/images/condition/condition-
 import guillainBarreSyndrome from "../assets/images/condition/condition-guillain-barre-syndrome.webp";
 import brachialPlexusInjury from "../assets/images/condition/condition-brachial-plexus-injury.webp";
 import nerveInjuryPostSurgical from "../assets/images/condition/condition-nerve-injury-post-surgical.webp";
-import muscularDystrophy from "../assets/images/condition/condition-neuromuscular-muscular-dystrophy-rehab.webp";
-import myopathies from "../assets/images/condition/condition-neuromuscular-myopathies-treatment.webp";
-import myastheniaGravis from "../assets/images/condition/condition-neuromuscular-myasthenia-gravis-rehab.webp";
-import postPolioSyndrome from "../assets/images/condition/condition-neuromuscular-post-polio-syndrome-rehab.webp";
+import muscularDystrophy from "../assets/images/condition/condition-muscular-dystrophy-rehab.webp";
+import myopathies from "../assets/images/condition/condition-myopathies-treatment.webp";
+import myastheniaGravis from "../assets/images/condition/condition-myasthenia-gravis-physiotherapy.webp";
+import postPolioSyndrome from "../assets/images/condition/condition-post-polio-syndrome-rehab.webp";
 import postNeurosurgeryRehab from "../assets/images/condition/condition-functional-post-neurosurgery-rehab.webp";
 import prolongedBedRestDeconditioning from "../assets/images/condition/condition-functional-prolonged-bed-rest-deconditioning.webp";
 import gaitAbnormalitiesRehab from "../assets/images/condition/condition-functional-gait-abnormalities-rehab.webp";
