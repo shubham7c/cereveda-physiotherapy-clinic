@@ -13,9 +13,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Difficulty maintaining balance while standing or walking, leading to unsteadiness, frequent falls, and fear of movement",
 
-        // image: "/images/symptoms/cards/balance-problems.jpg",
-        // heroImage: "/images/symptoms/hero/balance-problems.jpg",
-
         sections: {
           overview:
             "Balance problems are neurological symptoms in which a person experiences difficulty maintaining stability while standing, walking, or performing movements that require postural control. Balance is a complex function that depends on the coordinated activity of the brain, spinal cord, inner ear (vestibular system), vision, muscles, and sensory feedback from joints and skin. When any part of this system is disrupted due to neurological injury or disease, balance control becomes impaired.\n\nPatients with balance problems often describe feeling unsteady, dizzy, or as if the ground is moving beneath their feet. Simple activities such as standing up from a chair, turning while walking, or navigating uneven surfaces can feel unsafe. Over time, repeated episodes of imbalance may lead to fear of falling, avoidance of movement, reduced physical activity, and increased dependence on caregivers.\n\nIn neurological conditions, balance problems are not just a physical issue but also a psychological one. Loss of confidence, anxiety related to falls, and reduced participation in social and functional activities can significantly affect a person’s quality of life. Early assessment and targeted physiotherapy intervention play a crucial role in preventing complications and restoring independence.",
@@ -69,9 +66,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Repeated episodes of falling or near-falls due to impaired balance, coordination, or postural control",
 
-        // image: "/images/symptoms/cards/frequent-falls.jpg",
-        // heroImage: "/images/symptoms/hero/frequent-falls.jpg",
-
         sections: {
           overview:
             "Frequent falls are a serious neurological symptom that indicate impaired balance, coordination, strength, or postural control. A fall is not just an accident; in neurological patients, it is often a warning sign of underlying dysfunction in the nervous system. Recurrent falls significantly increase the risk of injuries, fractures, head trauma, and loss of independence.\n\nPatients experiencing frequent falls often report sudden loss of balance, inability to recover after a misstep, or delayed protective responses. Over time, repeated falls can lead to fear of movement, reduced physical activity, social withdrawal, and increased dependence on caregivers. In elderly and neurologically affected individuals, falls are one of the leading causes of hospitalization and long-term disability.\n\nEarly identification and targeted physiotherapy intervention are crucial to prevent complications, restore confidence, and improve safety during daily activities.",
@@ -123,9 +117,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Reduced strength in arms or legs affecting movement, endurance, and daily activities",
 
-        // image: "/images/symptoms/cards/muscle-weakness.jpg",
-        // heroImage: "/images/symptoms/hero/muscle-weakness.jpg",
-
         sections: {
           overview:
             "Muscle weakness is a neurological symptom where muscles are unable to generate sufficient force to perform normal movements. In neurological conditions, weakness occurs due to impaired communication between the brain, nerves, and muscles. This can affect one side of the body or both, depending on the underlying condition.\n\nPatients with muscle weakness may struggle with walking, lifting objects, climbing stairs, or maintaining posture. Over time, weakness can lead to fatigue, reduced endurance, dependency, and loss of functional independence if not addressed through rehabilitation.",
@@ -173,9 +164,6 @@ export const neuroSymptomsData = [
 
         heroSubtitle:
           "Increased muscle tightness causing restricted movement, discomfort, and difficulty in daily activities",
-
-        // image: "/images/symptoms/cards/spasticity.jpg",
-        // heroImage: "/images/symptoms/hero/spasticity.jpg",
 
         sections: {
           overview:
@@ -234,9 +222,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Uncontrolled shaking or involuntary movements affecting daily activities and coordination",
 
-        // image: "/images/symptoms/cards/tremors.jpg",
-        // heroImage: "/images/symptoms/hero/tremors.jpg",
-
         sections: {
           overview:
             "Tremors and involuntary movements are neurological symptoms characterized by rhythmic shaking or uncontrolled muscle activity. These movements can affect the hands, arms, legs, head, or entire body and may interfere with daily tasks such as writing, eating, walking, or maintaining posture.\n\nSuch symptoms often cause embarrassment, frustration, and loss of confidence. In neurological conditions, involuntary movements result from abnormal signals within the brain’s motor control centers, leading to poor regulation of muscle activity.",
@@ -285,9 +270,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Difficulty coordinating movements leading to clumsiness and unstable motion",
 
-        // image: "/images/symptoms/cards/ataxia.jpg",
-        // heroImage: "/images/symptoms/hero/ataxia.jpg",
-
         sections: {
           overview:
             "Poor coordination, often described as ataxia-like symptoms, involves difficulty in controlling the timing, force, and accuracy of movements. Patients may appear clumsy, unsteady, or unable to perform smooth actions.\n\nCoordination problems significantly affect functional activities such as walking, reaching, dressing, or writing. These symptoms commonly arise from damage to coordination centers of the brain.",
@@ -335,9 +317,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Reduced or altered sensation affecting safety, coordination, and movement control",
 
-        // image: "/images/symptoms/cards/numbness.jpg",
-        // heroImage: "/images/symptoms/hero/numbness.jpg",
-
         sections: {
           overview:
             "Numbness and sensory loss are neurological symptoms where a person experiences reduced, altered, or absent sensation in different parts of the body. Sensory feedback plays a critical role in movement control, balance, and safety.\n\nLoss of sensation can increase the risk of falls, injuries, and poor coordination, as the brain receives inadequate information about body position and contact with surfaces.",
@@ -384,9 +363,6 @@ export const neuroSymptomsData = [
 
         heroSubtitle:
           "Abnormal sitting or standing posture due to neurological impairments",
-
-        // image: "/images/symptoms/cards/postural-abnormalities.jpg",
-        // heroImage: "/images/symptoms/hero/postural-abnormalities.jpg",
 
         sections: {
           overview:
@@ -444,9 +420,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Difficulty performing daily activities independently due to neurological impairment",
 
-        // image: "/images/symptoms/cards/functional-independence.jpg",
-        // heroImage: "/images/symptoms/hero/functional-independence.jpg",
-
         sections: {
           overview:
             "Reduced functional independence refers to difficulty or inability to perform everyday activities such as walking, dressing, bathing, toileting, transferring, or eating without assistance. In neurological conditions, this decline occurs due to a combination of weakness, poor coordination, balance problems, sensory loss, or cognitive involvement.\n\nLoss of independence can be physically and emotionally distressing for both patients and caregivers. It often leads to increased dependence, reduced confidence, and limited participation in social and occupational roles. Early and structured rehabilitation is essential to restore function and prevent long-term disability.",
@@ -493,9 +466,6 @@ export const neuroSymptomsData = [
 
         heroSubtitle:
           "Severe generalized weakness following prolonged ICU stay or critical illness",
-
-        // image: "/images/symptoms/cards/icu-weakness.jpg",
-        // heroImage: "/images/symptoms/hero/icu-weakness.jpg",
 
         sections: {
           overview:
@@ -544,9 +514,6 @@ export const neuroSymptomsData = [
         heroSubtitle:
           "Loss of strength, endurance, and mobility due to prolonged inactivity or hospitalization",
 
-        // image: "/images/symptoms/cards/deconditioning.jpg",
-        // heroImage: "/images/symptoms/hero/deconditioning.jpg",
-
         sections: {
           overview:
             "Deconditioning refers to the loss of physical fitness, muscle strength, and endurance due to prolonged inactivity or bed rest. Neurological patients are particularly vulnerable due to limited mobility during illness or recovery.\n\nDeconditioning leads to fatigue, weakness, reduced balance, and difficulty returning to normal activities. Without rehabilitation, recovery may be prolonged and incomplete.",
@@ -593,9 +560,6 @@ export const neuroSymptomsData = [
 
         heroSubtitle:
           "Loss of voluntary movement affecting one or more parts of the body",
-
-        // image: "/images/symptoms/cards/paralysis.jpg",
-        // heroImage: "/images/symptoms/hero/paralysis.jpg",
 
         sections: {
           overview:

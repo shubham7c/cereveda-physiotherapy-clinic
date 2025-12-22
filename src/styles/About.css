@@ -68,7 +68,7 @@
   background: white;
   padding: 90px;
   border-radius: 36px;
-  box-shadow: 0 45px 90px rgba(0,0,0,0.08);
+  box-shadow: 0 45px 90px rgba(0, 0, 0, 0.08);
 }
 
 .about-content h2 {
@@ -106,8 +106,12 @@
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* =====================================================
@@ -136,7 +140,7 @@
   background: white;
   padding: 40px;
   border-radius: 30px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
 }
 
 /* =====================================================
@@ -166,7 +170,7 @@
   padding: 60px;
   border-radius: 36px;
   text-align: left;
-  box-shadow: 0 35px 80px rgba(0,0,0,0.08);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.08);
 }
 
 .founder-card img {
@@ -201,7 +205,7 @@
   background: white;
   padding: 45px;
   border-radius: 32px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.07);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.07);
 }
 
 /* =====================================================
@@ -225,7 +229,6 @@
 
 /* ================= TABLET & MOBILE ================= */
 @media (max-width: 768px) {
-
   /* ---------- HERO ---------- */
   .about-hero {
     padding: 72px 16px;
@@ -281,16 +284,16 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 26px;
-    justify-items: center;   /* 🔥 CENTER CARDS */
+    justify-items: center; /* 🔥 CENTER CARDS */
   }
 
   .testimonial-card {
     width: 100%;
-    max-width: 360px;        /* 🔥 PROFESSIONAL WIDTH */
+    max-width: 360px; /* 🔥 PROFESSIONAL WIDTH */
     padding: 26px 24px;
     border-radius: 22px;
     text-align: left;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
   }
 
   .testimonial-card h4 {
@@ -390,7 +393,6 @@
 
 /* ================= SMALL MOBILE ================= */
 @media (max-width: 480px) {
-
   .about-hero h1 {
     font-size: 26px;
   }
