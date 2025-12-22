@@ -1,7 +1,22 @@
 import "../styles/Footer.css";
 import logo from "../assets/cereveda-logo.png";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { LoaderContext } from "../App";
 
 export default function Footer() {
+  const navigate = useNavigate();
+  const { setLoading } = useContext(LoaderContext);
+
+  // 🔥 Common internal navigation handler
+  const handleNavigate = (path) => {
+    setLoading(true);
+    setTimeout(() => {
+      navigate(path);
+      setLoading(false);
+    }, 500);
+  };
+
   return (
     <footer className="footer">
 
@@ -34,10 +49,26 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/about">About CereVeda</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/conditions">Conditions We Treat</a></li>
-            <li><a href="/faq">FAQs</a></li>
+            <li>
+              <button onClick={() => handleNavigate("/about-us")}>
+                About CereVeda
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/therapy-offers")}>
+                Our Services
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/conditions-we-treat")}>
+                Conditions We Treat
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/faq")}>
+                FAQs
+              </button>
+            </li>
           </ul>
         </div>
 
@@ -46,11 +77,21 @@ export default function Footer() {
           <h4>Contact</h4>
           <p>📍 Kharar, Mohali</p>
           <p>🕒 Mon – Sat: 10:00 AM – 5:00 PM</p>
-          <p>✉️ cerevedaphysiotherapy@gmail.com</p>
 
-          <a href="/book-appointment" className="footer-cta">
+          {/* ✅ MAIL CLICK */}
+          <p>
+            ✉️{" "}
+            <a href="mailto:cerevedaphysiotherapy@gmail.com">
+              cerevedaphysiotherapy@gmail.com
+            </a>
+          </p>
+
+          <button
+            className="footer-cta"
+            onClick={() => handleNavigate("/book-appointment")}
+          >
             Book Appointment
-          </a>
+          </button>
         </div>
 
       </div>
@@ -63,8 +104,10 @@ export default function Footer() {
         </p>
 
         <div className="footer-policies">
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy Policy</a>
+          <button onClick={() => handleNavigate("/terms")}>Terms</button>
+          <button onClick={() => handleNavigate("/privacy")}>
+            Privacy Policy
+          </button>
         </div>
       </div>
     </footer>
