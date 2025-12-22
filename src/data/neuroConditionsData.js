@@ -16,11 +16,12 @@ import muscularDystrophy from "../assets/images/condition/condition-muscular-dys
 import myopathies from "../assets/images/condition/condition-myopathies-treatment.webp";
 import myastheniaGravis from "../assets/images/condition/condition-myasthenia-gravis-physiotherapy.webp";
 import postPolioSyndrome from "../assets/images/condition/condition-post-polio-syndrome-rehab.webp";
-import postNeurosurgeryRehab from "../assets/images/condition/condition-functional-post-neurosurgery-rehab.webp";
-import prolongedBedRestDeconditioning from "../assets/images/condition/condition-functional-prolonged-bed-rest-deconditioning.webp";
-import gaitAbnormalitiesRehab from "../assets/images/condition/condition-functional-gait-abnormalities-rehab.webp";
-import muscleWeaknessSpasticity from "../assets/images/condition/condition-functional-muscle-weakness-spasticity.webp";
-import posturalAbnormalities from "../assets/images/condition/condition-functional-postural-abnormalities.webp";
+import postNeurosurgeryRehab from "../assets/images/condition/condition-post-neurosurgery-rehabilitation.webp";
+import prolongedBedRestDeconditioning from "../assets/images/condition/condition-prolonged-bed-rest-deconditioning.webp";
+import gaitAbnormalitiesRehab from "../assets/images/condition/condition-gait-abnormalities-rehab.webp";
+import muscleWeaknessSpasticity from "../assets/images/condition/condition-muscle-weakness-spasticity.webp";
+import posturalAbnormalities from "../assets/images/condition/condition-postural-abnormalities.webp";
+
 
 
 export const neuroConditionsData = [];
