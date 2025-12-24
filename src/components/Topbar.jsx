@@ -21,7 +21,7 @@ function Topbar() {
       {loading && <SvgLoader />}
 
       <div className="w-full bg-[#0B2F3A] text-white">
-        <div className="max-w-300 mx-auto px-4 h-9 flex items-center justify-between text-sm">
+        <div className="max-w-300 mx-auto px-4 h-10 flex items-center justify-between text-sm">
           {/* LEFT : CALL */}
           <a
             href="tel:+917973113090"

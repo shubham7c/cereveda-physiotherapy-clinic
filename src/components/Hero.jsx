@@ -8,7 +8,7 @@ function Hero() {
       className="
         relative w-full 
         min-h-[75vh] sm:min-h-[80vh] lg:min-h-[85vh]
-        flex items-center
+        flex items-center sm:items-center
       "
       style={{
         backgroundImage: `url(${heroImage})`,
@@ -26,6 +26,8 @@ function Hero() {
           to-[#5fa8d3]/25 
           backdrop-blur-[2px]
         "
+        style={{
+    backdropFilter: window.innerWidth < 768 ? "blur(1px)" : "blur(2px)"}}
       />
 
       {/* CONTENT */}
@@ -33,7 +35,8 @@ function Hero() {
         className="
           relative z-10 
           max-w-300 mx-auto
-          px-4 sm:px-6 lg:px-10
+           px-4 sm:px-6 lg:px-10
+           pt-6 sm:pt-0
           text-white
         "
       >
@@ -72,9 +75,9 @@ function Hero() {
         {/* CTA BUTTONS */}
         <div
           className="
-            mt-7 sm:mt-8
+            mt-8 sm:mt-10
             flex justify-center
-            gap-4 sm:gap-6
+            gap-5 sm:gap-6
             flex-col sm:flex-row
             items-center
           "
