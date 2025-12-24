@@ -27,7 +27,8 @@ function Hero() {
           backdrop-blur-[2px]
         "
         style={{
-    backdropFilter: window.innerWidth < 768 ? "blur(1px)" : "blur(2px)"}}
+          backdropFilter: window.innerWidth < 768 ? "blur(1px)" : "blur(2px)",
+        }}
       />
 
       {/* CONTENT */}
@@ -48,7 +49,7 @@ function Hero() {
         {/* HEADING */}
         <h1
           className="
-            text-center font-extrabold leading-tight
+            text-center font-extrabold leading-snug sm:leading-tight
             text-3xl sm:text-4xl md:text-5xl lg:text-7xl
             max-w-6xl mx-auto
             drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)]
