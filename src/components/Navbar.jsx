@@ -34,7 +34,7 @@ function Navbar() {
 
   return (
     <nav className="w-full bg-white text-[#404041] sticky top-0 z-9999">
-      <div className="max-w-300 mx-auto px-3 py-2 flex justify-between items-center">
+      <div className="max-w-300 mx-auto px-3 py-1.5 sm:py-2 flex justify-between items-center">
         {/* LOGO */}
         <div
           onClick={() => {
@@ -43,9 +43,9 @@ function Navbar() {
               window.location.href = "/";
             }, 700);
           }}
-          className="h-25 w-40 rounded-xl overflow-hidden flex items-center cursor-pointer"
+          className="h-20 sm:h-24 w-36 sm:w-40 rounded-xl overflow-hidden flex items-center cursor-pointer"
         >
-          <img className="h-full w-full object-cover scale-[1.6]" src={logo} alt="CereVeda Logo" />
+          <img className="h-full w-full object-cover scale-[1.4] sm:scale-[1.6]" src={logo} alt="CereVeda Logo" />
         </div>
 
         {/* DESKTOP MENU */}
@@ -109,7 +109,7 @@ function Navbar() {
 
         {/* MOBILE MENU BUTTON */}
         <button
-          className="lg:hidden text-3xl transition-transform duration-300 active:scale-90"
+          className="lg:hidden text-3xl mt-0.5 transition-transform duration-300 active:scale-90"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <HiX /> : <HiMenuAlt3 />}
