@@ -23,37 +23,41 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (isSubmitting) return;
-    if (!form.agree) return alert("Please accept privacy policy");
+  e.preventDefault();
+  if (isSubmitting) return;
+  if (!form.agree) return alert("Please accept privacy policy");
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    try {
-      await fetch("PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE", {
-        method: "POST",
-        body: JSON.stringify(form),
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbze4O_wU7dAYlVw_Y7g5XSpMrFhplKTO47d-xlR2t3dyOOR5JyLMGJoA2y6rEdvx9nioQ/exec", {
+      method: "POST",
+      body: JSON.stringify({
+        ...form,
+        type: "call-request", // ✅ VERY IMPORTANT
+      }),
+    });
+
+    setShowPopup(true);
+
+    setTimeout(() => {
+      setShowPopup(false);
+      setForm({
+        name: "",
+        mobile: "",
+        email: "",
+        city: "",
+        remark: "",
+        agree: false,
       });
-
-      setShowPopup(true);
-
-      setTimeout(() => {
-        setShowPopup(false);
-        setForm({
-          name: "",
-          mobile: "",
-          email: "",
-          city: "",
-          remark: "",
-          agree: false,
-        });
-        setIsSubmitting(false);
-      }, 4000);
-    } catch {
-      alert("Something went wrong. Please try again.");
       setIsSubmitting(false);
-    }
-  };
+    }, 4000);
+  } catch {
+    alert("Something went wrong. Please try again.");
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <section className="contact-page">
