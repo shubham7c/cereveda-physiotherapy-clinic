@@ -91,8 +91,8 @@ export default function Footer() {
         </p>
 
         <div className="footer-policies">
-          <button onClick={() => handleNavigate("/terms")}>Terms</button>
-          <button onClick={() => handleNavigate("/privacy")}>Privacy Policy</button>
+          <button onClick={() => handleNavigate("/terms-and-conditions")}>Terms & Conditions</button>
+          <button onClick={() => handleNavigate("/privacy-policy")}>Privacy Policy</button>
         </div>
       </div>
     </footer>

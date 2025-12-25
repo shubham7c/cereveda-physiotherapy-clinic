@@ -8,21 +8,43 @@ import ClinicSection from "../components/ClinicSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import NeuroCareScope from "../components/NeuroCareScope";
 import FaqSection from "../components/CereVedaFAQ";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
-    <div>
-      <Hero />
-      <TrustStrip />
-      <CareProcess />
-      <ConditionsSection />
-      <DoctorsSection />
-      <ClinicSection />
-      <TestimonialsSection />
-      <NeuroCareScope />
-      <FaqSection />
-    </div>
+    <>
+      {/* 🔥 SEO META TAGS */}
+      <Helmet>
+        <title>
+          CereVeda Physiotherapy Clinic | Best Physiotherapist in Kharar Mohali
+        </title>
+
+        <meta
+          name="description"
+          content="CereVeda is a specialized neuro physiotherapy clinic in Kharar, Mohali offering stroke rehabilitation, neurological physiotherapy, pain management, and personalized recovery programs."
+        />
+
+        <link
+          rel="canonical"
+          href="https://www.cerevedaphysiotherapy.in/"
+        />
+      </Helmet>
+
+      {/* 🔥 EXISTING UI (UNCHANGED) */}
+      <div>
+        <Hero />
+        <TrustStrip />
+        <CareProcess />
+        <ConditionsSection />
+        <DoctorsSection />
+        <ClinicSection />
+        <TestimonialsSection />
+        <NeuroCareScope />
+        <FaqSection />
+      </div>
+    </>
   );
 }
+
 
 export default Home;

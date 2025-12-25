@@ -18,6 +18,8 @@ import NeuroConditions from "./pages/NeuroConditions";
 import NeuroConditionDetail from "./pages/NeuroConditionDetail";
 import NeuroSymptoms from "./pages/NeuroSymptoms";
 import NeuroSymptomDetail from "./pages/NeuroSymptomDetail";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 export const LoaderContext = React.createContext();
 
@@ -46,6 +48,8 @@ function App() {
           <Route path="/conditions-we-treat/:slug" element={<NeuroConditionDetail />} />
           <Route path="/symptoms-we-treat" element={<NeuroSymptoms />} />
           <Route path="/symptoms-we-treat/:slug" element={<NeuroSymptomDetail />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
         </Routes>
 
         <Footer />
