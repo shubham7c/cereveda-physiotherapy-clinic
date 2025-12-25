@@ -253,21 +253,20 @@
   cursor: pointer;
 }
 /* =====================================================
-   FIX: FOOTER POLICIES VISIBILITY ON MOBILE
-   (NO DESIGN CHANGE)
+   🔥 HARD FIX — MOBILE FOOTER POLICIES VISIBILITY
+   (NO UI / COLOR / LAYOUT CHANGE)
 ===================================================== */
 
 @media (max-width: 768px) {
-  .footer-policies {
+  .footer-bottom {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-    width: 100%;
   }
 
-  .footer-policies button {
-    display: inline-block;
-    white-space: nowrap;
+  .footer-policies {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    margin-top: 6px;
   }
 }
