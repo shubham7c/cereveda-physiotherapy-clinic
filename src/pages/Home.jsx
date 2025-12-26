@@ -18,6 +18,7 @@ function Home() {
         title="CereVeda Physiotherapy Clinic in Kharar, Mohali | Pain Relief & Rehabilitation Care"
         description="CereVeda Physiotherapy Clinic in Kharar, Mohali offers expert physiotherapy care for pain relief, stroke recovery, nerve injuries, posture problems, and mobility improvement. Personalized treatment by experienced physiotherapists."
         canonical="https://www.cerevedaphysiotherapy.in/"
+        isHome
       />
 
       {/* 🔥 EXISTING UI (UNCHANGED) */}

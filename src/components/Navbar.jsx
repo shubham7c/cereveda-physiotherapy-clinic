@@ -3,7 +3,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
 import { LoaderContext } from "../App";
 
 function Navbar() {
@@ -45,7 +44,7 @@ function Navbar() {
           }}
           className="h-20 sm:h-24 w-36 sm:w-40 rounded-xl overflow-hidden flex items-center cursor-pointer"
         >
-          <img className="h-full w-full object-cover scale-[1.4] sm:scale-[1.6]" src={logo} alt="CereVeda Logo" />
+          <img className="h-full w-full object-cover scale-[1.4] sm:scale-[1.6]" src="/logo.png" alt="CereVeda Logo" />
         </div>
 
         {/* DESKTOP MENU */}

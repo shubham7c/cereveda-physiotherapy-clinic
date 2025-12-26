@@ -232,6 +232,18 @@
 ===================================================== */
 
 /* Make footer buttons behave like links */
+.footer-links button,
+.footer-policies button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: #cfdfe3;
+  cursor: pointer;
+  text-align: center;
+  line-height:0.9;
+}
 
 
 /* Hover interaction (same as anchor feel) */
@@ -252,21 +264,13 @@
 .footer-cta {
   cursor: pointer;
 }
-/* =====================================================
-   🔥 HARD FIX — MOBILE FOOTER POLICIES VISIBILITY
-   (NO UI / COLOR / LAYOUT CHANGE)
-===================================================== */
-
+/* 🔒 FINAL MOBILE VISIBILITY FIX — DO NOT REMOVE */
 @media (max-width: 768px) {
-  .footer-bottom {
-    display: flex;
-  }
-
   .footer-policies {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    margin-top: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
   }
 }

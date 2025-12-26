@@ -69,7 +69,7 @@
 }
 
 /* =====================================================
-   CARD  ✅ FIXED
+   CARD
 ===================================================== */
 .condition-card {
   background: #ffffff;
@@ -78,7 +78,7 @@
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   display: flex;
-  flex-direction: column; /* ✅ COLUMN */
+  flex-direction: column;
   position: relative;
   width: 100%;
 }
@@ -129,16 +129,23 @@
   padding: 22px 24px 26px;
   display: flex;
   flex-direction: column;
+
+  /* 🔒 STABILITY FIX */
+  min-height: 220px;
 }
 
 .condition-body h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 12px;
+  line-height: 1.3;
+
+  /* 🔒 TITLE HEIGHT BALANCE */
+  min-height: 52px;
 }
 
 /* =====================================================
-   CHECKPOINT LIST (NO STRETCH)
+   CHECKPOINT LIST
 ===================================================== */
 .condition-points {
   list-style: none;
@@ -232,11 +239,13 @@
 
   .condition-body {
     padding: 18px 18px 22px;
+    min-height: unset; /* 🔓 mobile auto height */
   }
 
   .condition-body h3 {
     font-size: 17px;
     line-height: 1.35;
+    min-height: unset;
   }
 
   .condition-points li {
@@ -260,5 +269,44 @@
 
   .condition-body {
     padding: 16px;
+  }
+}
+/* =====================================================
+   📱 MOBILE CARD BALANCE FIX (SAFE)
+   NO DESIGN / COLOR / ANIMATION CHANGE
+===================================================== */
+@media (max-width: 768px) {
+  /* Card ko proper vertical flow */
+  .condition-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Body ko stretch allow */
+  .condition-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  /* Title spacing consistency */
+  .condition-body h3 {
+    min-height: 44px; /* visual balance only */
+  }
+
+  /* Points list spacing normalize */
+  .condition-points {
+    margin-bottom: 14px;
+  }
+
+  /* CTA always at bottom */
+  .read-more {
+    margin-top: auto;
+    padding-top: 6px;
+  }
+
+  /* Category spacing clean */
+  .neuro-category {
+    margin-bottom: 80px; /* was visually uneven */
   }
 }

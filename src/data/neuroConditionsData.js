@@ -1041,7 +1041,7 @@ and independence.
       },
       {
         title: "Gait Abnormalities",
-        slug: "gait-abnormalities-physiotherapy",
+        slug: "walking-balance-disorders-physiotherapy",
         heroImage: gaitAbnormalitiesRehab,
         shortDesc:
           "Advanced gait training programs to correct abnormal walking patterns caused by neurological conditions.",
@@ -1099,7 +1099,7 @@ and functional task practice to improve safety and confidence.
       },
       {
         title: "Reduced Functional Independence",
-        slug: "reduced-functional-independence-physiotherapy",
+        slug: "daily-activity-rehabilitation-physiotherapy",
         heroImage: reducedFunctionalIndependence,
         shortDesc: "Rehabilitation programs focused on restoring independence in daily activities.",
         overview: `

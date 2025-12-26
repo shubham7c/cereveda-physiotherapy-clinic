@@ -15,7 +15,7 @@ export default function ClinicSection() {
     return () => clearInterval(interval);
   }, []);
 
-  /* TEXT SCROLL ANIMATION (ONLY RIGHT SIDE) */
+  /* TEXT SCROLL ANIMATION */
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -27,6 +27,41 @@ export default function ClinicSection() {
     );
 
     if (textRef.current) observer.observe(textRef.current);
+
+    /* =========================
+       SEO: LOCAL CLINIC SCHEMA
+    ========================= */
+    const clinicSchema = {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "CereVeda Physiotherapy Clinic",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Sco 9, Corner. Lower Ground, opposite Gulmohar Complex, Sector 126, Model Town",
+        addressLocality: "Kharar",
+        addressRegion: "Punjab",
+        postalCode: "140301",
+        addressCountry: "IN"
+      },
+      medicalSpecialty: "Physiotherapy",
+      openingHours: "Mo-Sa 10:00-17:00",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "5"
+      }
+    };
+
+    let script = document.getElementById("schema-clinic-local");
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = "schema-clinic-local";
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(clinicSchema);
+
     return () => observer.disconnect();
   }, []);
 
@@ -44,8 +79,8 @@ export default function ClinicSection() {
         <div className="clinic-image">
           <img
             src={clinicImages[index]}
-            alt="Physiotherapy Clinic"
-            key={index} // IMPORTANT FOR DOT RESET
+            alt="CereVeda Physiotherapy Clinic in Kharar Punjab"
+            key={index}
           />
 
           {/* DOTS */}
@@ -69,11 +104,13 @@ export default function ClinicSection() {
             <span className="rating-number">5.0</span>
           </div>
 
-          <p className="clinic-type">Specialised in Neuro-Rehabilitation & Paediatric Cases.</p>
+          <p className="clinic-type">
+            Specialised in Neuro-Rehabilitation & Paediatric Cases.
+          </p>
 
           <p className="clinic-address">
-            Sco 9, Corner. Lower Ground, to, kharar. NH, opposite gulmohar complex, Sector 126,
-            Model Town, Chandigarh, Kharar, Punjab 140301
+            Sco 9, Corner. Lower Ground, to, kharar. NH, opposite gulmohar complex,
+            Sector 126, Model Town, Chandigarh, Kharar, Punjab 140301
           </p>
 
           <p className="clinic-time">🕒 Opening Hours: 10:00 AM – 5:00 PM</p>
@@ -86,6 +123,7 @@ export default function ClinicSection() {
               href="https://maps.app.goo.gl/dmqzKKzhkEkq4emT9"
               target="_blank"
               className="btn-outline"
+              rel="noopener noreferrer"
             >
               View on Map
             </a>

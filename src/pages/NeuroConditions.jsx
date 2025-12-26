@@ -9,11 +9,12 @@ function NeuroConditions() {
     <div className="neuro-conditions-page">
       {/* HERO */}
       <section className="neuro-hero">
-        <h1>Neurological Conditions We Treat</h1>
+        <h1>Physiotherapy Conditions We Treat in Kharar, Mohali</h1>
+
         <p>
-          At CereVeda Neuro Physiotherapy Clinic, we provide evidence-based neurological
-          rehabilitation programs designed to restore movement, balance, independence, and quality
-          of life.
+          CereVeda Physiotherapy Clinic provides personalized physiotherapy and rehabilitation
+          programs for neurological, orthopedic, and movement-related conditions. Our goal is to
+          reduce pain, restore mobility, and help patients regain independence in daily life.
         </p>
       </section>
 
@@ -23,29 +24,32 @@ function NeuroConditions() {
           <div className="neuro-category reveal" key={index}>
             <h2>{category.category}</h2>
 
-            {/* ✅ SAFE INTRO FIX (intro OR categoryIntro) */}
             {(category.intro || category.categoryIntro) && (
-              <p className="category-intro">{category.intro || category.categoryIntro}</p>
+              <p className="category-intro">
+                {category.intro || category.categoryIntro}
+              </p>
             )}
 
             <div className="conditions-grid">
               {Array.isArray(category.conditions) &&
                 category.conditions.map((condition, idx) => (
                   <div className="condition-card" key={idx}>
-                    {/* IMAGE (OPTIONAL) */}
                     {condition.image && (
                       <div className="condition-image">
-                        <img src={condition.image} alt={condition.title} loading="lazy" />
+                        <img
+                          src={condition.image}
+                          alt={`${condition.title} physiotherapy treatment at CereVeda Clinic in Kharar`}
+                          loading="lazy"
+                        />
                       </div>
                     )}
 
-                    {/* CONTENT */}
                     <div className="condition-body">
-                      <h3>{condition.title}</h3>
+                      <h3>{condition.title} Physiotherapy</h3>
 
-                      {/* DESCRIPTION / CHECKPOINTS */}
                       <ul className="condition-points">
-                        {(Array.isArray(condition.keyPoints) && condition.keyPoints.length > 0
+                        {(Array.isArray(condition.keyPoints) &&
+                        condition.keyPoints.length > 0
                           ? condition.keyPoints
                           : condition.shortDesc.split(",")
                         ).map((point, i) => (
@@ -56,8 +60,11 @@ function NeuroConditions() {
                         ))}
                       </ul>
 
-                      <Link to={`/conditions-we-treat/${condition.slug}`} className="read-more">
-                        Explore Condition →
+                      <Link
+                        to={`/conditions-we-treat/${condition.slug}`}
+                        className="read-more"
+                      >
+                        View Treatment Details →
                       </Link>
                     </div>
                   </div>

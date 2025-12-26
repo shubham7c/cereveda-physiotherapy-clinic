@@ -18,6 +18,31 @@ export default function NeuroCareScope() {
     );
 
     elements.forEach((el) => observer.observe(el));
+
+    /* =========================
+       SEO: NEURO CARE AUTHORITY SCHEMA
+    ========================= */
+    const neuroSchema = {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "CereVeda Physiotherapy Clinic",
+      medicalSpecialty: "Neurological Physiotherapy",
+      knowsAbout: neuroCareScopeData.conditions.flatMap((group) => group.items),
+      availableService: neuroCareScopeData.treatmentFocus.map((focus) => ({
+        "@type": "MedicalProcedure",
+        name: focus
+      }))
+    };
+
+    let script = document.getElementById("schema-neuro-care");
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = "schema-neuro-care";
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(neuroSchema);
+
     return () => observer.disconnect();
   }, []);
 

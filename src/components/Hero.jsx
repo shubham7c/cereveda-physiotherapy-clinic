@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "/src/assets/images/heroimage.png";
 import AnimatedButton from "../components/AnimatedButton";
 
 function Hero() {
@@ -11,7 +10,7 @@ function Hero() {
         flex items-center sm:items-center
       "
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: "url(/heroimage.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -31,22 +30,29 @@ function Hero() {
         }}
       />
 
+      {/* 🔒 SEO / ACCESSIBILITY IMAGE (NO UI IMPACT) */}
+      <img
+        src="/heroimage.png"
+        alt="CereVeda Physiotherapy Clinic providing pain relief, mobility improvement and neurological rehabilitation in Kharar Mohali"
+        className="sr-only"
+      />
+
       {/* CONTENT */}
       <div
         className="
           relative z-10 
           max-w-300 mx-auto
-           px-4 sm:px-6 lg:px-10
-           pt-6 sm:pt-0
+          px-4 sm:px-6 lg:px-10
+          pt-6 sm:pt-0
           text-white
         "
       >
-        {/* SEO HIDDEN H2 */}
+        {/* SEO SUPPORTING H2 (HIDDEN) */}
         <h2 className="sr-only">
           Best Physiotherapy Clinic for Pain Relief, Injury Recovery and Mobility Improvement
         </h2>
 
-        {/* HEADING */}
+        {/* MAIN H1 */}
         <h1
           className="
             text-center font-extrabold leading-snug sm:leading-tight
@@ -83,9 +89,17 @@ function Hero() {
             items-center
           "
         >
-          <AnimatedButton text="Book Appointment" href="/book-appointment" color="blue" />
+          <AnimatedButton
+            text="Book Appointment"
+            href="/book-appointment"
+            color="blue"
+          />
 
-          <AnimatedButton text="Request Callback" href="/contact-us" color="green" />
+          <AnimatedButton
+            text="Request Callback"
+            href="/contact-us"
+            color="green"
+          />
         </div>
       </div>
     </section>

@@ -1,7 +1,46 @@
+import { useEffect } from "react";
 import testimonials from "../data/testimonialsData";
 import "../styles/Testimonials.css";
 
 export default function Testimonials() {
+  useEffect(() => {
+    /* =========================
+       SEO: REVIEW & RATING SCHEMA
+    ========================= */
+    const reviewSchema = {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "CereVeda Physiotherapy Clinic",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: testimonials.length.toString()
+      },
+      review: testimonials.slice(0, 5).map((t) => ({
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: t.rating.toString(),
+          bestRating: "5"
+        },
+        author: {
+          "@type": "Person",
+          name: t.name
+        },
+        reviewBody: t.review
+      }))
+    };
+
+    let script = document.getElementById("schema-reviews");
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = "schema-reviews";
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(reviewSchema);
+  }, []);
+
   return (
     <section className="testimonials-section">
       <p className="mini-title">Rating & Reviews</p>
@@ -42,4 +81,3 @@ function TestimonialCard({ data }) {
     </div>
   );
 }
-1;

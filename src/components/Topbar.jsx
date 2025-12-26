@@ -26,6 +26,9 @@ function Topbar() {
           <a
             href="tel:+917973113090"
             className="flex items-center gap-2 font-medium hover:text-[#9fd3d0] transition"
+            onClick={(e) => {
+              if (window.innerWidth > 768) e.preventDefault();
+            }}
           >
             <FiPhoneCall className="text-base" />
             {/* ✅ TEXT NOW VISIBLE ON MOBILE TOO */}
