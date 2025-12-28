@@ -1,10 +1,11 @@
-import img1 from "../assets/Advanced Neurological Rehabilitation.png";
-import img2 from "../assets/Spinal Cord & Myelopathy Rehabilitation.jpg";
-import img3 from "../assets/Peripheral Nerve & Plexus Rehabilitation.jpg";
-import img4 from "../assets/Neuromuscular Disorder Rehabilitation.jpg";
-import img5 from "../assets/Post-Surgical & ICU Rehabilitation.jpg";
-import img6 from "../assets/Gait, Balance & Functional Training.jpg";
-import img7 from "../assets/Spasticity Strength & Pain Management.jpg";
+import img1 from "../assets/advanced-neurological-rehabilitation.webp";
+import img2 from "../assets/spinal-cord-myelopathy-rehab.webp";
+import img3 from "../assets/peripheral-nerve-plexus-rehab.webp";
+import img4 from "../assets/neuromuscular-disorder-rehab.webp";
+import img5 from "../assets/post-surgical-icu-rehab.webp";
+import img6 from "../assets/gait-balance-functional-training.webp";
+import img7 from "../assets/spasticity-strength-pain-management.webp";
+
 
 const therapyOffersData = [
   {

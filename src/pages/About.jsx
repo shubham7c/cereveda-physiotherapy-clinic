@@ -3,8 +3,8 @@ import "../styles/About.css";
 
 import useReveal from "../hooks/useReveal";
 
-import DrMishu from "../assets/images/Dr.Mishu.jpeg";
-import DrMridul from "../assets/images/DRMridul.jpeg";
+import DrMishu from "../assets/images/dr-mishu-garg.webp";
+import DrMridul from "../assets/images/dr-mridul-jyotsna.webp";
 
 export default function About() {
   useReveal();

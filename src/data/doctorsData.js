@@ -1,5 +1,5 @@
-import Mridul from "../assets/images/DRMridul.jpeg";
-import Mishu from "../assets/images/Dr.Mishu.jpeg";
+import Mridul from "../assets/images/dr-mridul-jyotsna.webp";
+import Mishu from "../assets/images/dr-mishu-garg.webp";
 
 const doctorsData = [
   {

@@ -1,0 +1,135 @@
+import React, { useState } from "react";
+
+export default function ContactForm({ source = "contact-page" }) {
+  const [form, setForm] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    city: "",
+    remark: "",
+    agree: false,
+  });
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm({
+      ...form,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (isSubmitting) return;
+    if (!form.agree) return alert("Please accept privacy policy");
+
+    setIsSubmitting(true);
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbze4O_wU7dAYlVw_Y7g5XSpMrFhplKTO47d-xlR2t3dyOOR5JyLMGJoA2y6rEdvx9nioQ/exec",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            ...form,
+            type: source, // 🔥 contact-page / popup-enquiry
+          }),
+        }
+      );
+
+      setShowPopup(true);
+
+      setTimeout(() => {
+        setShowPopup(false);
+        setForm({
+          name: "",
+          mobile: "",
+          email: "",
+          city: "",
+          remark: "",
+          agree: false,
+        });
+        setIsSubmitting(false);
+      }, 4000);
+    } catch {
+      alert("Something went wrong. Please try again.");
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        {/* 👤 Name */}
+        <div className="field">
+          <span className="icon">👤</span>
+          <input name="name" value={form.name} onChange={handleChange} required />
+          <label className={form.name ? "active" : ""}>Name</label>
+        </div>
+
+        {/* 📞 Mobile */}
+        <div className="field">
+          <span className="icon">📞</span>
+          <input name="mobile" value={form.mobile} onChange={handleChange} required />
+          <label className={form.mobile ? "active" : ""}>Mobile No.</label>
+        </div>
+
+        {/* ✉️ Email */}
+        <div className="field">
+          <span className="icon">✉️</span>
+          <input name="email" value={form.email} onChange={handleChange} />
+          <label className={form.email ? "active" : ""}>Email (Optional)</label>
+        </div>
+
+        {/* 📍 City */}
+        <div className="field">
+          <span className="icon">📍</span>
+          <input name="city" value={form.city} onChange={handleChange} required />
+          <label className={form.city ? "active" : ""}>City</label>
+        </div>
+
+        {/* 📝 Remark */}
+        <div className="field textarea">
+          <textarea name="remark" value={form.remark} onChange={handleChange} rows="4" required />
+          <label className={form.remark ? "active" : ""}>Remark / Concern</label>
+        </div>
+
+        {/* ✅ Checkbox */}
+        <div className="checkbox">
+          <input type="checkbox" name="agree" checked={form.agree} onChange={handleChange} />
+          <span>I agree to the privacy policy.</span>
+        </div>
+
+        {/* 🚀 Button */}
+        <button
+          type="submit"
+          className={`submit-btn-animated ${showPopup ? "active" : ""}`}
+          disabled={isSubmitting}
+        >
+          <span className="btn-text">
+            {showPopup ? "Thanks" : isSubmitting ? "Submitting..." : "Submit"}
+          </span>
+
+          <span className="check-box">
+            <svg viewBox="0 0 50 50">
+              <path d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+          </span>
+        </button>
+      </form>
+
+      {showPopup && (
+        <div className="success-popup">
+          <div className="popup-box">
+            <p className="popup-title">Request Submitted</p>
+            <p className="popup-desc">Our team will contact you shortly.</p>
+            <div className="loader-line"></div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

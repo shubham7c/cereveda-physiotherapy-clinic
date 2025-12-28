@@ -9,8 +9,19 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import NeuroCareScope from "../components/NeuroCareScope";
 import FaqSection from "../components/CereVedaFAQ";
 import SEO from "../components/SEO";
+import { useState, useEffect } from "react";
+import PopupEnquiry from "../components/PopupEnquiry";
 
 function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 2500); // 25 sec after page load
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       {/* 🔥 PROFESSIONAL SEO */}
@@ -20,6 +31,11 @@ function Home() {
         canonical="https://www.cerevedaphysiotherapy.in/"
         isHome
       />
+       {/* 🔥 POPUP ENQUIRY */}
+    <PopupEnquiry
+      show={showPopup}
+      onClose={() => setShowPopup(false)}
+    />
 
       {/* 🔥 EXISTING UI (UNCHANGED) */}
       <div>

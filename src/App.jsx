@@ -12,6 +12,7 @@ import BookAppointment from "./pages/BookAppointment";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import NotFound from "./pages/NotFound";
 
 import TherapyOffers from "./pages/TherapyOffers";
 import NeuroConditions from "./pages/NeuroConditions";
@@ -50,6 +51,7 @@ function App() {
           <Route path="/symptoms-we-treat/:slug" element={<NeuroSymptomDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

@@ -1,0 +1,127 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* CARD */
+.popup-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 26px;
+  overflow: hidden;
+  text-align: center;
+  animation: popupIn 0.35s ease;
+}
+
+/* HEADER */
+.popup-header {
+  height: 58px;
+  background: linear-gradient(135deg,#0b2f3a,#0f3d5c);
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.popup-card h3 {
+  margin-top: 26px;
+  font-size: 26px;
+  color: #0b2f3a;
+}
+
+.popup-card p {
+  font-size: 14px;
+  color: #5e7b83;
+  margin-bottom: 22px;
+}
+
+.popup-card form {
+  padding: 0 28px 30px;
+}
+
+.popup-card input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* =========================
+   FINAL PROFESSIONAL CHECKBOX
+========================= */
+
+.popup-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 8px 0 20px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #4f6b73;   /* 🔥 medical-trust tone */
+  cursor: pointer;
+}
+
+/* native checkbox – trusted & clean */
+.popup-checkbox input {
+  margin-top: 3px;              /* perfect vertical alignment */
+  width: 14px;
+  height: 14px;
+  accent-color: #0b2f3a;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.popup-checkbox span {
+  display: inline-block;
+}
+
+/* BUTTON */
+.popup-card button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 32px;
+  background: linear-gradient(135deg,#0b2f3a,#0f3d5c);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(11,47,58,0.25);
+}
+
+/* SUCCESS */
+.popup-success {
+  padding: 50px 30px;
+  font-size: 18px;
+  color: #2b9875;
+  font-weight: 600;
+}
+
+/* ANIMATION */
+@keyframes popupIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .popup-card { max-width: 92%; }
+  .popup-card h3 { font-size: 22px; }
+}

@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="footer-container">
         {/* LEFT : BRAND */}
         <div className="footer-brand">
-          <img src={logo} alt="CereVeda Neuro Physiotherapy Clinic Logo" />
+          <img src={logo} alt="CereVeda Physiotherapy Clinic Logo" />
 
           <p>
             CereVeda is a specialized neuro physiotherapy clinic dedicated to restoring movement,
