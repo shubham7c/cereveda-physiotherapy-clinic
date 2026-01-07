@@ -47,6 +47,8 @@
   width: max-content;
   animation: scrollLeft 40s linear infinite;
   will-change: transform; /* 🔥 avoid layout thrash */
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 /* =====================================================

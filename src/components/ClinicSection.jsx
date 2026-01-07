@@ -42,15 +42,15 @@ export default function ClinicSection() {
         addressLocality: "Kharar",
         addressRegion: "Punjab",
         postalCode: "140301",
-        addressCountry: "IN"
+        addressCountry: "IN",
       },
       medicalSpecialty: "Physiotherapy",
       openingHours: "Mo-Sa 10:00-17:00",
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5",
-        reviewCount: "5"
-      }
+        reviewCount: "5",
+      },
     };
 
     let script = document.getElementById("schema-clinic-local");
@@ -81,6 +81,8 @@ export default function ClinicSection() {
             src={clinicImages[index]}
             alt="CereVeda Physiotherapy Clinic in Kharar Punjab"
             key={index}
+            loading="lazy"
+            decoding="async"
           />
 
           {/* DOTS */}
@@ -104,13 +106,11 @@ export default function ClinicSection() {
             <span className="rating-number">5.0</span>
           </div>
 
-          <p className="clinic-type">
-            Specialised in Neuro-Rehabilitation & Paediatric Cases.
-          </p>
+          <p className="clinic-type">Specialised in Neuro-Rehabilitation & Paediatric Cases.</p>
 
           <p className="clinic-address">
-            Sco 9, Corner. Lower Ground, to, kharar. NH, opposite gulmohar complex,
-            Sector 126, Model Town, Chandigarh, Kharar, Punjab 140301
+            Sco 9, Corner. Lower Ground, to, kharar. NH, opposite gulmohar complex, Sector 126,
+            Model Town, Chandigarh, Kharar, Punjab 140301
           </p>
 
           <p className="clinic-time">🕒 Opening Hours: 10:00 AM – 5:00 PM</p>

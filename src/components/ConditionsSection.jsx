@@ -4,9 +4,7 @@ import conditionsData from "../data/conditionsData";
 
 export default function ConditionsSection() {
   useEffect(() => {
-    const elements = document.querySelectorAll(
-      ".conditions-header, .conditions-marquee"
-    );
+    const elements = document.querySelectorAll(".conditions-header, .conditions-marquee");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,8 +29,8 @@ export default function ConditionsSection() {
       relatedCondition: conditionsData.map((item) => ({
         "@type": "MedicalCondition",
         name: item.title,
-        description: item.description
-      }))
+        description: item.description,
+      })),
     };
 
     let script = document.getElementById("schema-medical-conditions");
@@ -52,8 +50,8 @@ export default function ConditionsSection() {
       <div className="conditions-header">
         <h2>Conditions We Help You Recover From</h2>
         <p>
-          Evidence-based physiotherapy care for common pain, injuries and mobility
-          problems — delivered with personalized clinical attention.
+          Evidence-based physiotherapy care for common pain, injuries and mobility problems —
+          delivered with personalized clinical attention.
         </p>
       </div>
 
@@ -66,6 +64,8 @@ export default function ConditionsSection() {
                 <img
                   src={item.image}
                   alt={`${item.title} physiotherapy treatment in Kharar Mohali`}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <h3>{item.title}</h3>

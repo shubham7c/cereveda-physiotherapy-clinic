@@ -34,8 +34,8 @@ export default function DoctorsSection() {
         medicalSpecialty: "Physiotherapy",
         description: doc.role,
         hasCredential: doc.qualification,
-        knowsAbout: doc.specialties
-      }))
+        knowsAbout: doc.specialties,
+      })),
     };
 
     let script = document.getElementById("schema-physicians");
@@ -60,8 +60,8 @@ export default function DoctorsSection() {
       <div className="doctors-header animate-text">
         <h2>Meet Our Neuro Physiotherapy Experts</h2>
         <p>
-          Experienced, qualified and clinically driven neuro physiotherapists
-          dedicated to long-term recovery and functional independence.
+          Experienced, qualified and clinically driven neuro physiotherapists dedicated to long-term
+          recovery and functional independence.
         </p>
       </div>
 
@@ -73,6 +73,8 @@ export default function DoctorsSection() {
               <img
                 src={doc.image}
                 alt={`${doc.name}, Neuro Physiotherapist at CereVeda Clinic in Kharar Mohali`}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
